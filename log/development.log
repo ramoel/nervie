@@ -4362,3 +4362,40 @@ Processing SessionsController#new (for 127.0.0.1 at 2010-03-24 00:15:10) [GET]
 Rendering template within layouts/application
 Rendering sessions/new
 Completed in 150ms (View: 147, DB: 219) | 200 OK [http://localhost/]
+  [4;36;1mSQL (32.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (13.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTuristicPoint Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'consumidorweb3.turistic_points' doesn't exist: SHOW FIELDS FROM `turistic_points`[0m
+  [4;36;1mSQL (38.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (76.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTuristicPoint Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'consumidorweb3.turistic_points' doesn't exist: SHOW FIELDS FROM `turistic_points`[0m
+  [4;36;1mSQL (51.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (135.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTuristicPoint Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'consumidorweb3.turistic_points' doesn't exist: SHOW FIELDS FROM `turistic_points`[0m
+  [4;36;1mSQL (18.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (134.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100319201249)
+Migrating to CreateCities (20100319204932)
+Migrating to CreateHosts (20100320020336)
+Migrating to CreateTuristicPoints (20100324033735)
+  [4;36;1mSQL (592.1ms)[0m   [0;1mCREATE TABLE `turistic_points` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `city_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (52.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100324033735')[0m
+  [4;36;1mSQL (60.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (37.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.1ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mdescribe `cities`[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mSHOW KEYS FROM `cities`[0m
+  [4;36;1mSQL (119.5ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mSQL (45.5ms)[0m   [0mdescribe `hosts`[0m
+  [4;36;1mSQL (25.3ms)[0m   [0;1mSHOW KEYS FROM `hosts`[0m
+  [4;35;1mSQL (328.3ms)[0m   [0mSHOW FIELDS FROM `turistic_points`[0m
+  [4;36;1mSQL (48.6ms)[0m   [0;1mdescribe `turistic_points`[0m
+  [4;35;1mSQL (20.2ms)[0m   [0mSHOW KEYS FROM `turistic_points`[0m
+  [4;36;1mSQL (70.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (104.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (135.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (121.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (53.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTuristicPoint Columns (126.7ms)[0m   [0;1mSHOW FIELDS FROM `turistic_points`[0m
