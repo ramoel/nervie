@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
   # Be sure to include AuthenticationSystem in Application Controller instead
   include AuthenticatedSystem
-
-  before_filter :login_required, :except => [:new]
   
   def index
     @users = User.paginate(:per_page => 10, :page => params[:page])

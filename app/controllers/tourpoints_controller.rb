@@ -1,6 +1,6 @@
 class TourpointsController < ApplicationController
 
-  before_filter :login_required
+  include AuthenticatedSystem
   
   # GET /tourpoints
   # GET /tourpoints.xml

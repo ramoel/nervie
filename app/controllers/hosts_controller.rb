@@ -1,6 +1,6 @@
 class HostsController < ApplicationController
 
-  before_filter :login_required
+  include AuthenticatedSystem
   
   # GET /hosts
   # GET /hosts.xml

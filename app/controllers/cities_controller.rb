@@ -2,8 +2,6 @@ class CitiesController < ApplicationController
 
   include AuthenticatedSystem
 
-  before_filter :login_required
-
   # GET /cities
   # GET /cities.xml
   def index
