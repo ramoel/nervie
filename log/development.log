@@ -4611,3 +4611,6 @@ Completed in 278ms (View: 155, DB: 150) | 200 OK [http://localhost/users]
   [4;36;1mSQL (21.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (30.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
   [4;36;1mTourpoint Columns (27.1ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (64.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (41.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTourpoint Columns (181.4ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
