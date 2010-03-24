@@ -261,4 +261,68 @@ overwrite app/views/tourpoints/show.html.erb? (enter "h" for help) [Ynaqdh] y
  create mode 100644 test/unit/tourpoint_test.rb
 ]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ 
 ]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git add . && git commit -m "zerada db e criadoo scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [K
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add . && git commit -m "zerada db e criadoo scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ script/generate themed tourpoints tourpoint --[6Pwith_will_paginate[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --with_will_paginate[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- [C-with_will_paginate- --with_will_paginate[Ca --with_will_paginate[C[Cp --with_will_paginate[C[C[Cp --with_will_paginate[C[C[C[C= --with_will_paginate[C[C[C[C[Ca --with_will_paginate[C[C[C[C[C[Cp --with_will_paginate[C[C[C[C[C[C[Cp --with_will_paginate[C[C[C[C[C[C[C[Cl --with_will_paginate[C[C[C[C[C[C[C[C[Ci --with_will_paginate[C[C[C[C[C[C[C[C[C[Cc --with_will_paginate[C[C[C[C[C[C[C[C[C[C[Ca --with_will_paginate[C[C[C[C[C[C[C[C[C[C[C[Ct --with_will_paginate[C[C[C[C[C[C[C[C[C[C[C[C[Ci --with_will_paginate[C[C[C[C[C[C[C[C[C[C[C[C[C[Co --with_will_paginate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn --with_will_paginate[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+      exists  app/views/tourpoints
+   identical  app/views/tourpoints/index.html.erb
+   identical  app/views/tourpoints/new.html.erb
+   identical  app/views/tourpoints/edit.html.erb
+   identical  app/views/tourpoints/_form.html.erb
+   identical  app/views/tourpoints/show.html.erb
+   identical  app/views/tourpoints/_sidebar.html.erb
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ script/generate themed tourpoints tourpoint ---app=application --with_will_paginate[Agit add . && git commit -m "zerada db e criado[12P scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ script/generate themed tourpoints tourpoint --[6Pwith_will_paginate[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git add . && git commit -m "zerada db e criado scaffold de tourpoints"
+[master e819118] zerada db e criado scaffold de tourpoints
+ 3 files changed, 30 insertions(+), 2 deletions(-)
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git add . && git commit -m "zerada db e criadoo scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ script/generate themed tourpoints tourpoint --app=application --with_will_paginate[1P[1P[1P[1@l[1@a[1@y[1@o[1@u[1@t
+      exists  app/views/tourpoints
+   identical  app/views/tourpoints/index.html.erb
+   identical  app/views/tourpoints/new.html.erb
+   identical  app/views/tourpoints/edit.html.erb
+   identical  app/views/tourpoints/_form.html.erb
+   identical  app/views/tourpoints/show.html.erb
+   identical  app/views/tourpoints/_sidebar.html.erb
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ script/generate themed tourpoints tourpoint ---layout=application --with_will_paginate[Agit add . && git commit -m "zerada db e criado[15P scaffold de tourpoints"
+[master 6dccb89] zerada db e criado scaffold de tourpoints
+ 2 files changed, 4 insertions(+), 1 deletions(-)
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git add . && git commit -m "zerada db e criadoo scaffold de tourpoints"
+[master 2a78bf1] zerada db e criado scaffold de tourpoints
+ 1 files changed, 10 insertions(+), 0 deletions(-)
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git add . && git commit -m "zerada db e criadoo scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ script/generate themed tourpoints tourpoint --layout=application --with_will_paginate[Agit add . && git commit -m "zerada db e criado[15P scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ script/generate themed tourpoints tourpoint --app=application --with_will_paginate[Agit add . && git commit -m "zerada db e criado[12P scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ script/generate themed tourpoints tourpoint --app=application --with_will_paginate[Agit add . && git commit -m "zerada db e criado[12P scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ script/generate themed tourpoints tourpoint --layout=application --with_will_paginate[Agit add . && git commit -m "zerada db e criado[15P scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku rake db:migrate
+(in /disk1/home/slugs/154103_1bc2041_5713/mnt)
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku destroy nervie[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdb:push
+Taps Load Error: Could not find RubyGem taps (>= 0.2.23, < 0.3.0)
+
+You may need to install or update the taps gem to use db commands.
+On most systems this will be:
+
+sudo gem install taps
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ sudo gem install taps
+[sudo] password for ramoel: 
+	Successfully installed sinatra-0.9.2
+Successfully installed activesupport-2.2.2
+Successfully installed activerecord-2.2.2
+Successfully installed thor-0.9.9
+Successfully installed sequel-3.0.0
+Successfully installed taps-0.2.26
+6 gems installed
+Installing ri documentation for sinatra-0.9.2...
+Installing ri documentation for activesupport-2.2.2...
+Installing ri documentation for activerecord-2.2.2...
+Installing ri documentation for thor-0.9.9...
+Installing ri documentation for sequel-3.0.0...
+Installing ri documentation for taps-0.2.26...
+Installing RDoc documentation for sinatra-0.9.2...
+Installing RDoc documentation for activesupport-2.2.2...
+Installing RDoc documentation for activerecord-2.2.2...
+Installing RDoc documentation for thor-0.9.9...
+Installing RDoc documentation for sequel-3.0.0...
+Installing RDoc documentation for taps-0.2.26...
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ sudo gem install taps[7Pheroku db:push
+Auto-detected local database: mysql://consumidorweb3:bleh123@mysql04.consumidorweb.com/consumidorweb3?encoding=utf8
+Sending schema
+Sending data
+5 tables, 4 records
+                                                                               schema_migrat:   0% |                                          | ETA:  --:--:--schema_migrat: 100% |==========================================| ETA:  00:00:00schema_migrat: 100% |==========================================| Time: 00:00:00
+                                                                               tourpoints:    100% |==========================================| ETA:  --:--:--tourpoints:    100% |==========================================| ETA:  --:--:--tourpoints:    100% |==========================================| Time: 00:00:00
+                                                                               users:         100% |==========================================| ETA:  --:--:--users:         100% |==========================================| ETA:  --:--:--users:         100% |==========================================| Time: 00:00:00
+                                                                               cities:        100% |==========================================| ETA:  --:--:--cities:        100% |==========================================| ETA:  --:--:--cities:        100% |========================================
