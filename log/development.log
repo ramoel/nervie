@@ -4644,3 +4644,24 @@ Rendering template within layouts/application
 Rendering tourpoints/index
 Rendered tourpoints/_sidebar (0.1ms)
 Completed in 130ms (View: 93, DB: 144) | 200 OK [http://localhost/tourpoints]
+  [4;35;1mSQL (39.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (153.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#index (for 127.0.0.1 at 2010-03-24 02:36:50) [GET]
+  [4;35;1mTourpoint Load (65.1ms)[0m   [0mSELECT * FROM `tourpoints` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering tourpoints/index
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 165ms (View: 92, DB: 258) | 200 OK [http://localhost/tourpoints]
+  [4;36;1mSQL (32.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (29.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 02:36:54) [GET]
+  [4;36;1mTourpoint Columns (25.6ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+Rendered tourpoints/_form (5.6ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 147ms (View: 113, DB: 88) | 200 OK [http://localhost/tourpoints/new]

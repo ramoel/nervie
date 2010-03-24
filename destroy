@@ -1067,4 +1067,146 @@ D	test/unit/turistic_point_test.rb
 #	deleted:    test/unit/turistic_point_test.rb
 #
 ]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git add .
-]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ dir[K[K[Kgit dir
+git: 'dir' is not a git-command. See 'git --help'.
+
+Did you mean this?
+	diff
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ dir [K[K[K[Kgit [K[K[K[Kgit diradd .statuscheckoutpush heroku master
+Everything up-to-date
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git push heroku masterdir[Kadd .statuscheckoutpush heroku master[12Pstatusheroku rm app/views/layouts/turistic_points.httml.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[C[C[C[Cinfo[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm app/views/layouts/turistic_points.httml.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git status[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush heroku master[10Pcheckout[2Pstatus[1Padd .[2Pdirpush heroku master[Kgit [K[K[K[Kheroku rake db:migrate
+(in /disk1/home/slugs/154103_1847a33_5713/mnt)
+==  CreateTuristicPoints: migrating ===========================================
+-- create_table(:turistic_points)
+   -> 0.0143s
+==  CreateTuristicPoints: migrated (0.0144s) ==================================
+
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git remoet[K[Kte add heroku git@heroku.com:nervie.g it
+fatal: remote heroku already exists.
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git init
+Reinitialized existing Git repository in /home/ramoel/web/nervie/.git/
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ echo .svn > .gitignore
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git add .
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git push -f heroku
+warning: You did not specify any refspecs to push, and the current remote
+warning: has not configured any push refspecs. The default action in this
+warning: case is to push all matching refspecs, that is, all branches
+warning: that exist both locally and remotely will be updated.  This may
+warning: not necessarily be what you want to happen.
+warning: 
+warning: You can specify what action you want to take in this case, and
+warning: avoid seeing this message again, by configuring 'push.default' to:
+warning:   'nothing'  : Do not push anything
+warning:   'matching' : Push all matching branches (default)
+warning:   'tracking' : Push the current branch to whatever it is tracking
+warning:   'current'  : Push the current branch
+Everything up-to-date
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git push -f heroku master
+Everything up-to-date
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heoro[K[K[Kroku console A[K1[K'Author.name :name => "Ramoel  Rodrigues"'
+NameError: uninitialized constant Author
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku console 'Author.name :name => "Ramoel RRodrigues"'[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku console Author.count
+NameError: uninitialized constant Author
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku console
+Ruby console for nervie.heroku.com
+>> Author.count
+NameError: uninitialized constant Author
+>> Author
+NameError: uninitialized constant Author
+>> ]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku console Author.count'Author.name :name => "Ramoel RRodrigues"'[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [20Pgit push -f heroku master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[9Padd .echo .svn > .gitignore[14Pgit initremote add heroku git@heroku.com:nervie.giitgit sta[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kstatus
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   .gitignore
+#	deleted:    app/views/layouts/turistic_points.html.erb
+#	modified:   destroy
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/controllers/turistic_points_controller.rb
+#	deleted:    app/helpers/turistic_points_helper.rb
+#	deleted:    app/models/turistic_point.rb
+#	deleted:    app/views/layouts/tourpoints.html.erb
+#	deleted:    app/views/layouts/turistic_points-old.html.erb
+#	deleted:    app/views/turistic_points/edit.html.erb
+#	deleted:    app/views/turistic_points/index.html.erb
+#	deleted:    app/views/turistic_points/new.html.erb
+#	deleted:    app/views/turistic_points/show.html.erb
+#	deleted:    db/migrate/20100324033735_create_turistic_points.rb
+#	modified:   destroy
+#	modified:   log/development.log
+#	deleted:    test/fixtures/turistic_points.yml
+#	deleted:    test/functional/turistic_points_controller_test.rb
+#	deleted:    test/unit/helpers/turistic_points_helper_test.rb
+#	deleted:    test/unit/turistic_point_test.rb
+#
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git commid[Kt 0[K-m "deletado layout padrao de tour point"
+[master f684b0f] deletado layout padrao de tourpoint
+ 3 files changed, 707 insertions(+), 18 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 app/views/layouts/turistic_points.html.erb
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git push ha[Keroku master
+Counting objects: 12, done.
+Delta compression using up to 2 threads.
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 8.28 KiB, done.
+Total 7 (delta 5), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+       Compiled slug size is 328K
+-----> Launching...... done
+       http://nervie.heroku.com deployed to Heroku
+
+To git@heroku.com:nervie.git
+   1847a33..f684b0f  master -> master
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git push heroku mastercommit -m "deletado layout padrao de tourppoint"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[Cstatus[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cheroku console[4Pgit status
+# On branch master
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/controllers/turistic_points_controller.rb
+#	deleted:    app/helpers/turistic_points_helper.rb
+#	deleted:    app/models/turistic_point.rb
+#	deleted:    app/views/layouts/tourpoints.html.erb
+#	deleted:    app/views/layouts/turistic_points-old.html.erb
+#	deleted:    app/views/turistic_points/edit.html.erb
+#	deleted:    app/views/turistic_points/index.html.erb
+#	deleted:    app/views/turistic_points/new.html.erb
+#	deleted:    app/views/turistic_points/show.html.erb
+#	deleted:    db/migrate/20100324033735_create_turistic_points.rb
+#	modified:   destroy
+#	modified:   log/development.log
+#	deleted:    test/fixtures/turistic_points.yml
+#	deleted:    test/functional/turistic_points_controller_test.rb
+#	deleted:    test/unit/helpers/turistic_points_helper_test.rb
+#	deleted:    test/unit/turistic_point_test.rb
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git commit -a
+[?1049h[1;24r[m(B[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m[m(B[H[2J[0;7m(B  GNU nano 2.0.9         Arquivo: .git/COMMIT_EDITMSG                           [4;1H[m(B# Please enter the commit message for your changes. Lines starting[5d# with '#' will be ignored, and an empty message aborts the commit.[6d#[7d# Committer: Ramoel <ramoel@ramoel-laptop.(none)>[8d#[9d# On branch master[10d# Changes to be committed:[11d#   (use "git reset HEAD <file>..." to unstage)[12d#[13d#[9Gdeleted:    app/controllers/turistic_points_controller.rb[14d#[9Gdeleted:    app/helpers/turistic_points_helper.rb[15d#[9Gdeleted:    app/models/turistic_point.rb[16d#[9Gdeleted:    app/views/layouts/tourpoints.html.erb[17d#[9Gdeleted:    app/views/layouts/turistic_points-old.html.erb[18d#[9Gdeleted:    app/views/turistic_points/edit.html.erb[19d#[9Gdeleted:    app/views/turistic_points/index.html.erb[20d#[9Gdeleted:    app/views/turistic_points/new.html.erb[21d#[9Gdeleted:    app/views/turistic_points/show.html.erb[22;31H[0;7m(B[ 27 linhas lidas ][23d^G[m(B Obter Ajud[0;7m(B^O[m(B Gravar    [0;7m(B^R[m(B Ler o Arq [0;7m(B^Y[m(B Pág Anter [0;7m(B^K[m(B Recort Txt[0;7m(B^C[m(B Pos Atual[24d[0;7m(B^X[m(B Sair[14G[0;7m(B^J[m(B Justificar[0;7m(B^W[m(B Onde está?[0;7m(B^V[m(B Próx Pág  [0;7m(B^U[m(B Colar Txt [0;7m(B^T[m(B Para Spell[3d[22;15H[0;7m(B[ lin 1/28 (3%), col 1/1 (100%), carac 0/1117 (0%) ][3d[m(B[2;21r[2;1HM[1;24r[1;69H[0;7m(BModificado[4d[m(B[2;21r[2;1HM[1;24r[5;1H[2;21r[21;1H
+[1;24r[21;1H#[9Gdeleted:    app/views/turistic_points/new.html.erb[4d[2;21r[21;1H
+[1;24r[21;1H#[9Gdeleted:    app/views/turistic_points/show.html.erb[3d[2;21r[21;1H
+[1;24r[21;1H#[9Gdeleted:    db/migrate/20100324033735_create_turistic_points.rb[3d[1P[1P[1Pqlease enter the commit message for your changes. Lines startingq[H[2J[24dUtilize "fg" para retornar ao nano
+
+[1]+  Parado                  git commit -a
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ dir[K[K[Kls
+[0m[01;34mapp[0m     [01;34mdb[0m       [01;34mdoc[0m  [01;34mlog[0m        [01;34mpublic[0m    README  [01;34mtest[0m  [01;34mvendor[0m
+[01;34mconfig[0m  destroy  [01;34mlib[0m  [01;34mnbproject[0m  Rakefile  [01;34mscript[0m  [01;34mtmp[0m
+[m]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ clear
+[H[2J]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git status
+fatal: Unable to create '.git/index.lock': File exists.
+
+If no other git process is currently running, this probably means a
+git process crashed in this repository earlier. Make sure no other git
+process is running and remove the
