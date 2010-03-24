@@ -1,4 +1,7 @@
 class TourpointsController < ApplicationController
+
+  before_filter :login_required
+  
   # GET /tourpoints
   # GET /tourpoints.xml
   def index

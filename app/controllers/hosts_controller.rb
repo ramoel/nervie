@@ -1,4 +1,7 @@
 class HostsController < ApplicationController
+
+  before_filter :login_required
+  
   # GET /hosts
   # GET /hosts.xml
   def index
