@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nome: MyString
+  estado: MyString
+  populacao: MyString
+  fundacao: 2010-03-19
+  aniversario: 2010-03-19
+
+two:
+  nome: MyString
+  estado: MyString
+  populacao: MyString
+  fundacao: 2010-03-19
+  aniversario: 2010-03-19

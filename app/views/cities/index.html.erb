@@ -1,0 +1,48 @@
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+	    <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", cities_path  %></li>
+  		<li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_city_path %></li>
+    </ul>
+  </div>          
+  <div class="content">          
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Cities</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>             
+          <th class="first">ID</th>
+          <th><%= t("activerecord.attributes.city.nome", :default => t("activerecord.labels.nome", :default => "Name")) %></th>
+          <th><%= t("activerecord.attribues.city.estado", :default => t("activerecord.labels.nome", :default => "State")) %></th>
+          <th><%= t("activerecord.attribues.city.populacao", :default => t("activerecord.labels.nome", :default => "Population")) %></th>
+          <th><%= t("activerecord.attribues.city.fundacao", :default => t("activerecord.labels.nome", :default => "Foundation")) %></th>
+          <th>Years Old</th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @cities.each do |city| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td><%= city.id %></td>
+          <td><%= link_to city.nome, city_path(city) %></td>
+          <td><%= city.estado %></td>
+          <td><%= city.populacao %></td>
+          <td><%= city.fundacao %></td>
+          <td><%= (Time.now.year - city.fundacao.year) %></td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", city_path(city) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_city_path(city) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", city_path(city), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>          
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+        <%= will_paginate @cities  %>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>
