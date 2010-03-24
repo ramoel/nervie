@@ -6743,3 +6743,34 @@ ActionController::RoutingError (No route matches "/images/web-app-theme/cross.pn
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (125.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (19.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-24 16:08:17) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 461ms (View: 454, DB: 145) | 200 OK [http://localhost/]
+  [4;36;1mSQL (169.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#index (for 127.0.0.1 at 2010-03-24 16:08:22) [GET]
+  [4;36;1mTourpoint Load (35.4ms)[0m   [0;1mSELECT * FROM `tourpoints` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering tourpoints/index
+Rendered tourpoints/_sidebar (13.9ms)
+Completed in 180ms (View: 135, DB: 312) | 200 OK [http://localhost/tourpoints]
+  [4;35;1mSQL (109.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (21.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 16:08:26) [GET]
+  [4;35;1mTourpoint Columns (21.9ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (120.5ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (52.6ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (233.8ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 476ms (View: 271, DB: 327) | 200 OK [http://localhost/tourpoints/new]
