@@ -4446,3 +4446,165 @@ Completed in 275ms (View: 118, DB: 388) | 200 OK [http://localhost/users]
   [4;36;1mSQL (17.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (68.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
   [4;36;1mTuristicPoint Columns (225.1ms)[0m   [0;1mSHOW FIELDS FROM `turistic_points`[0m
+  [4;36;1mSQL (109.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (34.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-03-24 01:13:16) [GET]
+  [4;36;1mUser Load (27.1ms)[0m   [0;1mSELECT * FROM `users` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (19.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered users/_sidebar (0.1ms)
+Completed in 221ms (View: 164, DB: 190) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (30.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (58.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-03-24 01:13:20) [GET]
+  [4;36;1mUser Load (198.0ms)[0m   [0;1mSELECT * FROM `users` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (197.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendered users/_sidebar (0.3ms)
+Completed in 521ms (View: 114, DB: 484) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (69.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (329.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTuristicPoint Columns (1156.9ms)[0m   [0;1mSHOW FIELDS FROM `turistic_points`[0m
+  [4;36;1mSQL (114.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (27.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (33.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (33.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100319201249)
+Migrating to CreateCities (20100319204932)
+Migrating to CreateHosts (20100320020336)
+Migrating to CreateTourpoints (20100324041826)
+  [4;36;1mSQL (1730.6ms)[0m   [0;1mCREATE TABLE `tourpoints` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `city_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (209.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100324041826')[0m
+  [4;36;1mSQL (63.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (144.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (17.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (90.7ms)[0m   [0;1mdescribe `cities`[0m
+  [4;35;1mSQL (82.6ms)[0m   [0mSHOW KEYS FROM `cities`[0m
+  [4;36;1mSQL (58.2ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mSQL (121.8ms)[0m   [0mdescribe `hosts`[0m
+  [4;36;1mSQL (159.7ms)[0m   [0;1mSHOW KEYS FROM `hosts`[0m
+  [4;35;1mSQL (33.5ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (54.4ms)[0m   [0;1mdescribe `tourpoints`[0m
+  [4;35;1mSQL (111.7ms)[0m   [0mSHOW KEYS FROM `tourpoints`[0m
+  [4;36;1mSQL (28.6ms)[0m   [0;1mSHOW FIELDS FROM `turistic_points`[0m
+  [4;35;1mSQL (152.9ms)[0m   [0mdescribe `turistic_points`[0m
+  [4;36;1mSQL (21.9ms)[0m   [0;1mSHOW KEYS FROM `turistic_points`[0m
+  [4;35;1mSQL (159.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (101.6ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (120.7ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (14.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (29.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (19.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1188.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (523.8ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (37.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (100.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100319201249)
+  [4;35;1mSQL (163.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2533.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255), `email` varchar(255), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(255), `remember_token_expires_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (74.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100319201249')[0m
+Migrating to CreateCities (20100319204932)
+  [4;36;1mSQL (839.3ms)[0m   [0;1mCREATE TABLE `cities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `estado` varchar(255), `populacao` varchar(255), `fundacao` date, `aniversario` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (54.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100319204932')[0m
+Migrating to CreateHosts (20100320020336)
+  [4;36;1mSQL (429.7ms)[0m   [0;1mCREATE TABLE `hosts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nome` varchar(255), `endereco` varchar(255), `bairro` varchar(255), `cep` varchar(255), `telefone` varchar(255), `fax` varchar(255), `site` varchar(255), `email` varchar(255), `cidade_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (155.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100320020336')[0m
+Migrating to CreateTourpoints (20100324041826)
+  [4;36;1mSQL (642.0ms)[0m   [0;1mCREATE TABLE `tourpoints` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` text, `city_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (122.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100324041826')[0m
+  [4;36;1mSQL (16.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (28.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (15.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (55.0ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (127.8ms)[0m   [0;1mdescribe `cities`[0m
+  [4;35;1mSQL (118.6ms)[0m   [0mSHOW KEYS FROM `cities`[0m
+  [4;36;1mSQL (175.4ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mSQL (37.8ms)[0m   [0mdescribe `hosts`[0m
+  [4;36;1mSQL (39.0ms)[0m   [0;1mSHOW KEYS FROM `hosts`[0m
+  [4;35;1mSQL (56.9ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (20.5ms)[0m   [0;1mdescribe `tourpoints`[0m
+  [4;35;1mSQL (116.7ms)[0m   [0mSHOW KEYS FROM `tourpoints`[0m
+  [4;36;1mSQL (44.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (27.8ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (82.8ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (47.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (29.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (32.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (58.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100319201249)
+Migrating to CreateCities (20100319204932)
+Migrating to CreateHosts (20100320020336)
+Migrating to CreateTourpoints (20100324041826)
+  [4;36;1mSQL (39.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (164.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (92.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.2ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (217.6ms)[0m   [0;1mdescribe `cities`[0m
+  [4;35;1mSQL (134.4ms)[0m   [0mSHOW KEYS FROM `cities`[0m
+  [4;36;1mSQL (117.0ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mSQL (130.5ms)[0m   [0mdescribe `hosts`[0m
+  [4;36;1mSQL (161.6ms)[0m   [0;1mSHOW KEYS FROM `hosts`[0m
+  [4;35;1mSQL (622.6ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (49.0ms)[0m   [0;1mdescribe `tourpoints`[0m
+  [4;35;1mSQL (102.6ms)[0m   [0mSHOW KEYS FROM `tourpoints`[0m
+  [4;36;1mSQL (550.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (117.4ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (569.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (62.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (124.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-24 01:25:45) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 140ms (View: 138, DB: 187) | 200 OK [http://localhost/]
+  [4;36;1mSQL (14.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (57.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-03-24 01:25:47) [GET]
+  [4;36;1mUser Load (142.2ms)[0m   [0;1mSELECT * FROM `users` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_sidebar (0.1ms)
+Completed in 242ms (View: 89, DB: 214) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (33.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (21.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index (for 127.0.0.1 at 2010-03-24 01:25:49) [GET]
+  [4;35;1mCity Load (1051.7ms)[0m   [0mSELECT * FROM `cities` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering cities/index
+Rendered cities/_sidebar (0.1ms)
+Completed in 1211ms (View: 151, DB: 1107) | 200 OK [http://localhost/cities]
+  [4;36;1mSQL (88.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (70.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HostsController#index (for 127.0.0.1 at 2010-03-24 01:25:52) [GET]
+  [4;36;1mHost Load (44.7ms)[0m   [0;1mSELECT * FROM `hosts` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering hosts/index
+Rendered hosts/_sidebar (0.1ms)
+Completed in 146ms (View: 93, DB: 204) | 200 OK [http://localhost/hosts]
+  [4;35;1mSQL (19.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (18.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-03-24 01:25:53) [GET]
+  [4;35;1mUser Load (112.0ms)[0m   [0mSELECT * FROM `users` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_sidebar (0.1ms)
+Completed in 278ms (View: 155, DB: 150) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (162.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (59.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTourpoint Columns (379.0ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
