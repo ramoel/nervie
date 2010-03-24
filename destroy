@@ -362,4 +362,709 @@ Resetting sequences
 Counting objects: 153, done.
 Delta compression using up to 2 threads.
 Compressing objects:   0% (1/129)   Compressing objects:   1% (2/129)   Compressing objects:   2% (3/129)   Compressing objects:   3% (4/129)   Compressing objects:   4% (6/129)   Compressing objects:   5% (7/129)   Compressing objects:   6% (8/129)   Compressing objects:   7% (10/129)   Compressing objects:   8% (11/129)   Compressing objects:   9% (12/129)   Compressing objects:  10% (13/129)   Compressing objects:  11% (15/129)   Compressing objects:  12% (16/129)   Compressing objects:  13% (17/129)   Compressing objects:  14% (19/129)   Compressing objects:  15% (20/129)   Compressing objects:  16% (21/129)   Compressing objects:  17% (22/129)   Compressing objects:  18% (24/129)   Compressing objects:  19% (25/129)   Compressing objects:  20% (26/129)   Compressing objects:  21% (28/129)   Compressing objects:  22% (29/129)   Compressing objects:  23% (30/129)   Compressing objects:  24% (31/129)   Compressing objects:  25% (33/129)   Compressing objects:  26% (34/129)   Compressing objects:  27% (35/129)   Compressing objects:  28% (37/129)   Compressing objects:  29% (38/129)   Compressing objects:  30% (39/129)   Compressing objects:  31% (40/129)   Compressing objects:  32% (42/129)   Compressing objects:  33% (43/129)   Compressing objects:  34% (44/129)   Compressing objects:  35% (46/129)   Compressing objects:  36% (47/129)   Compressing objects:  37% (48/129)   Compressing objects:  38% (50/129)   Compressing objects:  39% (51/129)   Compressing objects:  40% (52/129)   Compressing objects:  41% (53/129)   Compressing objects:  42% (55/129)   Compressing objects:  43% (56/129)   Compressing objects:  44% (57/129)   Compressing objects:  45% (59/129)   Compressing objects:  46% (60/129)   Compressing objects:  47% (61/129)   Compressing objects:  48% (62/129)   Compressing objects:  49% (64/129)   Compressing objects:  50% (65/129)   Compressing objects:  51% (66/129)   Compressing objects:  52% (68/129)   Compressing objects:  53% (69/129)   Compressing objects:  54% (70/129)   Compressing objects:  55% (71/129)   Compressing objects:  56% (73/129)   Compressing objects:  57% (74/129)   Compressing objects:  58% (75/129)   Compressing objects:  59% (77/129)   Compressing objects:  60% (78/129)   Compressing objects:  61% (79/129)   Compressing objects:  62% (80/129)   Compressing objects:  63% (82/129)   Compressing objects:  64% (83/129)   Compressing objects:  65% (84/129)   Compressing objects:  66% (86/129)   Compressing objects:  67% (87/129)   Compressing objects:  68% (88/129)   Compressing objects:  69% (90/129)   Compressing objects:  70% (91/129)   Compressing objects:  71% (92/129)   Compressing objects:  72% (93/129)   Compressing objects:  73% (95/129)   Compressing objects:  74% (96/129)   Compressing objects:  75% (97/129)   Compressing objects:  76% (99/129)   Compressing objects:  77% (100/129)   Compressing objects:  78% (101/129)   Compressing objects:  79% (102/129)   Compressing objects:  80% (104/129)   Compressing objects:  81% (105/129)   Compressing objects:  82% (106/129)   Compressing objects:  83% (108/129)   Compressing objects:  84% (109/129)   Compressing objects:  85% (110/129)   Compressing objects:  86% (111/129)   Compressing objects:  87% (113/129)   Compressing objects:  88% (114/129)   Compressing objects:  89% (115/129)   Compressing objects:  90% (117/129)   Compressing objects:  91% (118/129)   Compressing objects:  92% (119/129)   Compressing objects:  93% (120/129)   Compressing objects:  94% (122/129)   Compressing objects:  95% (123/129)   Compressing objects:  96% (124/129)   Compressing objects:  97% (126/129)   Compressing objects:  98% (127/129)   Compressing objects:  99% (128/129)   Compressing objects: 100% (129/129)   Compressing objects: 100% (129/129), done.
-Writing objects:   0% (1/133)   Writing objects:   1% (2/133)   Writing objects:   2% (3/133)   Writing objects:   3% (4/133)   Writing objects:   4% (6/133)   Writing objects:   5% (7/133)   Writing objects:   6% (8/133)   Writing objects:   7% (10/133)   Writing objects:   8% (11/133)   Writing objects:   9% (12/133)   Writing objects:  10% (14/133)   Writing objects:  11% (15/133)   Writing objects:  12% (16/133)   Writing objects:  13% (18/133)   Writing objects:  14% (19/133)   Writing objects:  15% (20/133)   Writing objects:  16% (22/133)   Writing objects:  17% (23/133)   Writing objects:  18% (24/133)   Writing objects:  19% (26/133)   Writing objects:  20% (27/133)   Writing objects:  21% (29/133)   Writing objects:  22% (30/133)   Writing objects:  24% (32/133)   Writing objects:  27% (36/133)   Writing objects:  28% (38/133)   Writing objects:  30% (40/133)   Writing objects:  31% (42/133)   Writing objects:  32% (43/133)   Writing objects:  33% (44/133)   Writing objects:  34% (46/133)   Writing objects:  36% (48/133)   Writing objects:  37% (50/133)   Writing objects:  38% (51/133)   Writing objects:  39% (52/133)   Writing objects:  40% (54/133)   Writing objects:  41% (55/133)   Writing objects:  42% (56/133)   Writing objects:  44% (59/133)   Writing objects:  45% (60/133)   Writing objects:  46% (62/133)   Writing objects:  47% (63/133)   Writing objects:  48% (64/133)   Writing objects:  49% (66/133)   Writing objects:  50% (67/133)   Writing objects:  51% (68/133)   Writing objects:  52% (70/133)   Writing objects:  53% (71/133)   Writing objects:  54% (72/133)   Writing objects:  55% (74/133)   Writing objects:  56% (75/133)   Writing objects:  57% (76/133)   Writing objects:  58% (78/133)   Writing objects:  59% (79/133)   Writing objects:  60% (80/133)   Writing objects:  61% (82/133)   Writing objects:  62% (83/133)   Writing objects:  63% (84/133)   Writing objects:  64% (86/133)   Writing objects:  65% (87/133)   Writing objects:  66% (88/133)   Writing objects:  67% (90/133)   Writing objects:  68% (91/133)   Writing objects:  69% (92/133)   Writing objects:  70% (94/133)   Writing objects:  71% (95/133)   Writing objects:  72% (96/133)   Writing objects:  73% (98/133)   Writing objects:  74% (99/133)   Writing objects:  75% (100/133)   Writing objects:  76% (102/133)   Writing objects:  77% (103/133)   Writing objects:  78% (104/133)   Writing objects:  79% (106/133)   Writing objects:  80% (107/133)   Writing objects:  81% (108/133)   Writing objects:  82% (110/133)   Writing objects:  83% (111/133)   Writing objects:  84% (112/133)   Writing objects:  85% (114/133)   Writing objects:  86% (115/133)   Writing objects:  87
+Writing objects:   0% (1/133)   Writing objects:   1% (2/133)   Writing objects:   2% (3/133)   Writing objects:   3% (4/133)   Writing objects:   4% (6/133)   Writing objects:   5% (7/133)   Writing objects:   6% (8/133)   Writing objects:   7% (10/133)   Writing objects:   8% (11/133)   Writing objects:   9% (12/133)   Writing objects:  10% (14/133)   Writing objects:  11% (15/133)   Writing objects:  12% (16/133)   Writing objects:  13% (18/133)   Writing objects:  14% (19/133)   Writing objects:  15% (20/133)   Writing objects:  16% (22/133)   Writing objects:  17% (23/133)   Writing objects:  18% (24/133)   Writing objects:  19% (26/133)   Writing objects:  20% (27/133)   Writing objects:  21% (29/133)   Writing objects:  22% (30/133)   Writing objects:  24% (32/133)   Writing objects:  27% (36/133)   Writing objects:  28% (38/133)   Writing objects:  30% (40/133)   Writing objects:  31% (42/133)   Writing objects:  32% (43/133)   Writing objects:  33% (44/133)   Writing objects:  34% (46/133)   Writing objects:  36% (48/133)   Writing objects:  37% (50/133)   Writing objects:  38% (51/133)   Writing objects:  39% (52/133)   Writing objects:  40% (54/133)   Writing objects:  41% (55/133)   Writing objects:  42% (56/133)   Writing objects:  44% (59/133)   Writing objects:  45% (60/133)   Writing objects:  46% (62/133)   Writing objects:  47% (63/133)   Writing objects:  48% (64/133)   Writing objects:  49% (66/133)   Writing objects:  50% (67/133)   Writing objects:  51% (68/133)   Writing objects:  52% (70/133)   Writing objects:  53% (71/133)   Writing objects:  54% (72/133)   Writing objects:  55% (74/133)   Writing objects:  56% (75/133)   Writing objects:  57% (76/133)   Writing objects:  58% (78/133)   Writing objects:  59% (79/133)   Writing objects:  60% (80/133)   Writing objects:  61% (82/133)   Writing objects:  62% (83/133)   Writing objects:  63% (84/133)   Writing objects:  64% (86/133)   Writing objects:  65% (87/133)   Writing objects:  66% (88/133)   Writing objects:  67% (90/133)   Writing objects:  68% (91/133)   Writing objects:  69% (92/133)   Writing objects:  70% (94/133)   Writing objects:  71% (95/133)   Writing objects:  72% (96/133)   Writing objects:  73% (98/133)   Writing objects:  74% (99/133)   Writing objects:  75% (100/133)   Writing objects:  76% (102/133)   Writing objects:  77% (103/133)   Writing objects:  78% (104/133)   Writing objects:  79% (106/133)   Writing objects:  80% (107/133)   Writing objects:  81% (108/133)   Writing objects:  82% (110/133)   Writing objects:  83% (111/133)   Writing objects:  84% (112/133)   Writing objects:  85% (114/133)   Writing objects:  86% (115/133)   Writing objects:  87% (116/133)   Writing objects:  88% (118/133)   Writing objects:  89% (119/133)   Writing objects:  90% (120/133)   Writing objects:  91% (122/133)   Writing objects:  92% (123/133)   Writing objects:  93% (124/133)   Writing objects:  94% (126/133)   Writing objects:  95% (127/133)   Writing objects:  96% (128/133)   Writing objects:  97% (130/133)   Writing objects:  98% (131/133)   Writing objects:  99% (132/133)   Writing objects: 100% (133/133)   Writing objects: 100% (133/133), 28.78 KiB, done.
+Total 133 (delta 86), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+       Compiled slug size is 320K
+-----> Launching....... done
+       http://nervie.heroku.com deployed to Heroku
+
+To git@heroku.com:nervie.git
+   1bc2041..87c69e9  master -> master
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git push heroku masteradd . && git commit -m "zerada db e criadoo scaffold de tourpoints"
+[master 1847a33] zerada db e criado scaffold de tourpoints
+ 2 files changed, 21 insertions(+), 1 deletions(-)
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git add . && git commit -m "zerada db e criadoo scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[C[23Ppush heroku master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd . && git commit -m "zerada db e criadoo scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku db:push[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crake db:drop:all[9Pdb:pushgit add . && git commit -m "zerada db e criadoo scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[C[23Ppush heroku master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd . && git commit -m "zerada db e criadoo scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit add . && git commit -m "zerada db e criadoo scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[C[23Ppush heroku master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Counting objects: 9, done.
+Delta compression using up to 2 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 1.80 KiB, done.
+Total 5 (delta 4), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Rails app detected
+       Compiled slug size is 320K
+-----> Launching..... done
+       http://nervie.heroku.com deployed to Heroku
+
+To git@heroku.com:nervie.git
+   87c69e9..1847a33  master -> master
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git rename
+git: 'rename' is not a git-command. See 'git --help'.
+
+Did you mean this?
+	rebase
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git --help
+usage: git [--version] [--exec-path[=GIT_EXEC_PATH]] [--html-path] [-p|--paginate|--no-pager] [--bare] [--git-dir=GIT_DIR] [--work-tree=GIT_WORK_TREE] [--help] COMMAND [ARGS]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and merge with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+See 'git help COMMAND' for more information on a specific command.
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git fidd[K[K[K[Kdiff
+[?1h=diff --git a/app/controllers/turistic_points_controller.rb b/app/controllers/tur[m
+deleted file mode 100644[m
+index 0a58e97..0000000[m
+--- a/app/controllers/turistic_points_controller.rb[m
++++ /dev/null[m
+@@ -1,85 +0,0 @@[m
+-class TuristicPointsController < ApplicationController[m
+-  # GET /turistic_points[m
+-  # GET /turistic_points.xml[m
+-  def index[m
+-    @turistic_points = TuristicPoint.paginate(:per_page => 10, :page => params[[m
+-[m
+-    respond_to do |format|[m
+-      format.html # index.html.erb[m
+-      format.xml  { render :xml => @turistic_points }[m
+-    end[m
+-  end[m
+-[m
+-  # GET /turistic_points/1[m
+-  # GET /turistic_points/1.xml[m
+-  def show[m
+-    @turistic_point = TuristicPoint.find(params[:id])[m
+-[m
+:[K[K-    respond_to do |format|[m
+:[K[K-      format.html # show.html.erb[m
+:[K[K-      format.xml  { render :xml => @turistic_point }[m
+:[K[K-    end[m
+:[K[K-  end[m
+:[K[K-[m
+:[K[K-  # GET /turistic_points/new[m
+:[K[K-  # GET /turistic_points/new.xml[m
+:[K[K-  def new[m
+:[K[K-    @turistic_point = TuristicPoint.new[m
+:[K[K-[m
+:[K[K-    respond_to do |format|[m
+:[K[K-      format.html # new.html.erb[m
+:[K[K-      format.xml  { render :xml => @turistic_point }[m
+:[K[K-    end[m
+:[K[K-  end[m
+:[K[K-[m
+:[K[K-  # GET /turistic_points/1/edit[m
+:[K[K-  def edit[m
+:[K[K-    @turistic_point = TuristicPoint.find(params[:id])[m
+:[K[K-  end[m
+:[K[K-[m
+:[K[K-  # POST /turistic_points[m
+:[K[K-  # POST /turistic_points.xml[m
+:[K[K-  def create[m
+:[K[K-    @turistic_point = TuristicPoint.new(params[:turistic_point])[m
+:[K[K-[m
+:[K[K-    respond_to do |format|[m
+:[K[K-      if @turistic_point.save[m
+:[K[K-        flash[:notice] = 'TuristicPoint was successfully created.'[m
+:[K[K-        format.html { redirect_to(@turistic_point) }[m
+:[K[K-        format.xml  { render :xml => @turistic_point, :status => :created, :loc[m
+:[K[K-      else[m
+:[K[K-        format.html { render :action => "new" }[m
+:[K[K-        format.xml  { render :xml => @turistic_point.errors, :status => :unproc[m
+:[K[K-      end[m
+:[K[K-    end[m
+:[K[K-  end[m
+:[K[K-[m
+:[K[K-  # PUT /turistic_points/1[m
+:[K[K-  # PUT /turistic_points/1.xml[m
+:[K[K-  def update[m
+:[K[K-    @turistic_point = TuristicPoint.find(params[:id])[m
+:[K[K-[m
+:[K[K-    respond_to do |format|[m
+:[K[K-      if @turistic_point.update_attributes(params[:turistic_point])[m
+:[K[K-        flash[:notice] = 'TuristicPoint was successfully updated.'[m
+:[K[K-        format.html { redirect_to(@turistic_point) }[m
+:[K[K-        format.xml  { head :ok }[m
+:[K[K-      else[m
+:[K[K-        format.html { render :action => "edit" }[m
+:[K[K-        format.xml  { render :xml => @turistic_point.errors, :status => :unproc[m
+:[K[K-      end[m
+:[K[K-    end[m
+:[K[K-  end[m
+:[K[K-[m
+:[K[K-  # DELETE /turistic_points/1[m
+:[K[K-  # DELETE /turistic_points/1.xml[m
+:[K[K-  def destroy[m
+:[K[K-    @turistic_point = TuristicPoint.find(params[:id])[m
+:[K[K-    @turistic_point.destroy[m
+:[K[K-[m
+:[K[K-    respond_to do |format|[m
+:[K[K-      format.html { redirect_to(turistic_points_url) }[m
+:[K[K-      format.xml  { head :ok }[m
+:[K[K-    end[m
+:[K[K-  end[m
+:[K[K-end[m
+:[K[Kdiff --git a/app/helpers/turistic_points_helper.rb b/app/helpers/turistic_points[m
+:[K[Kdeleted file mode 100644[m
+:[K[Kindex 70306bc..0000000[m
+:[K[K--- a/app/helpers/turistic_points_helper.rb[m
+:[K[K+++ /dev/null[m
+:[K[K@@ -1,2 +0,0 @@[m
+:[K[K-module TuristicPointsHelper[m
+:[K[K-end[m
+:[K[Kdiff --git a/app/models/turistic_point.rb b/app/models/turistic_point.rb[m
+:[K[Kdeleted file mode 100644[m
+:[K[Kindex 3f10957..0000000[m
+:[K[K--- a/app/models/turistic_point.rb[m
+:[K[K+++ /dev/null[m
+:[K[K@@ -1,2 +0,0 @@[m
+:[K[K-class TuristicPoint < ActiveRecord::Base[m
+:[K[K-end[m
+:[K[Kdiff --git a/app/views/layouts/tourpoints.html.erb b/app/views/layouts/tourpoint[m
+:[K[Kdeleted file mode 100644[m
+:[K[Kindex ae35f4a..0000000[m
+:[K[K--- a/app/views/layouts/tourpoints.html.erb[m
+:[K[K+++ /dev/null[m
+:[K[K@@ -1,17 +0,0 @@[m
+:[K[K-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"[m
+:[K[K-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">[m
+:[K[K-[m
+:[K[K-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">[m
+:[K[K-<head>[m
+:[K[K-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />[m
+:[K[K-  <title>Tourpoints: <%= controller.action_name %></title>[m
+:[K[K-  <%= stylesheet_link_tag 'scaffold' %>[m
+:[K[K-</head>[m
+:[K[K-<body>[m
+:[K[K-[m
+:[K[K-<p style="color: green"><%= flash[:notice] %></p>[m
+:[K[K-[m
+:[K[K-<%= yield %>[m
+:[K[K-[m
+:[K[K-</body>[m
+:[K[K-</html>[m
+:[K[Kdiff --git a/app/views/layouts/turistic_points-old.html.erb b/app/views/layouts/[m
+:[K[Kdeleted file mode 100644[m
+:[K[Kindex d69fc52..0000000[m
+:[K[K--- a/app/views/layouts/turistic_points-old.html.erb[m
+:[K[K+++ /dev/null[m
+:[K[K@@ -1,17 +0,0 @@[m
+:[K[K-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"[m
+:[K[K-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">[m
+:[K[K-[m
+:[K[K-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">[m
+:[K[K-<head>[m
+:[K[K-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />[m
+:[K[K-  <title>TuristicPoints: <%= controller.action_name %></title>[m
+:[K[K-  <%= stylesheet_link_tag 'scaffold' %>[m
+:[K[K-</head>[m
+:[K[K-<body>[m
+:[K[K-[m
+:[K[K-<p style="color: green"><%= flash[:notice] %></p>[m
+:[K[K-[m
+:[K[K-<%= yield %>[m
+:[K[K-[m
+:[K[K-</body>[m
+:[K[K-</html>[m
+:[K[Kdiff --git a/app/views/layouts/turistic_points.html.erb b/app/views/layouts/turi[m
+:[K[Kdeleted file mode 100644[m
+:[K[Kindex d69fc52..0000000[m
+:[K[K--- a/app/views/layouts/turistic_points.html.erb[m
+:[K[K+++ /dev/null[m
+:[K[K@@ -1,17 +0,0 @@[m
+:[K[K-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"[m
+:[K[K-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">[m
+:[K[K-[m
+:[K[K-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">[m
+:[K[K-<head>[m
+:[K[K-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />[m
+:[K[K-  <title>TuristicPoints: <%= controller.action_name %></title>[m
+:[K[K-  <%= stylesheet_link_tag 'scaffold' %>[m
+:[K[K-</head>[m
+:[K[K-<body>[m
+:[K[K-[m
+:[K[K-<p style="color: green"><%= flash[:notice] %></p>[m
+:[K[K-[m
+:[K[K-<%= yield %>[m
+:[K[K-[m
+:[K[K-</body>[m
+:[K[K-</html>[m
+:[K[Kdiff --git a/app/views/turistic_points/edit.html.erb b/app/views/turistic_points[m
+:[K[Kdeleted file mode 100644[m
+:[K[Kindex 0cef3e7..0000000[m
+:[K[K--- a/app/views/turistic_points/edit.html.erb[m
+:[K[K+++ /dev/null[m
+:[K[K@@ -1,19 +0,0 @@[m
+:[K[K-<div class="block">[m
+:[K[K-  <div class="secondary-navigation">[m
+:[K[K-    <ul class="wat-cf">[m
+:[K[K-      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "Lis[m
+:[K[K-      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_turis[m
+:[K[K-      <li class="active"><%= link_to "#{t("web-app-theme.edit", :default => "Ed[m
+:[K[K-    </ul>[m
+:[K[K-  </div>          [m
+:[K[K-  <div class="content">            [m
+:[K[K-    <h2 class="title"><%= t("web-app-theme.edit", :default => "Edit") %> Turist[m
+:[K[K-    <div class="inner">[m
+:[K[K-      <% form_for @turistic_point, :url => turistic_point_path(@turistic_point)[m
+:[K[K-        <%= render :partial => "form", :locals => {:f => f} %>[m
+:[K[K-      <% end -%>[m
+:[K[K-    </div>[m
+:[K[K-  </div>[m
+:[K[K-</div>[m
+:[K[K-[m
+:[K[K-<% content_for :sidebar, render(:partial => 'sidebar') -%>[m
+:[K[K\ No newline at end of file[m
+:[K[Kdiff --git a/app/views/turistic_points/index.html.erb b/app/views/turistic_point[m
+:[K[Kdeleted file mode 100644[m
+:[K[Kindex 0a87f68..0000000[m
+:[K[K--- a/app/views/turistic_points/index.html.erb[m
+:[K[K+++ /dev/null[m
+:[K[K [KESCESC[K^J^J[K:[K[K:[K[K@@ -1,42 +0,0 @@[m
+:[K[K[?1l>
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git .[Kadd .
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git diff
+[?1h=diff --git a/app/controllers/turistic_points_controller.rb b/app/controllers/tur[m
+deleted file mode 100644[m
+index 0a58e97..0000000[m
+--- a/app/controllers/turistic_points_controller.rb[m
++++ /dev/null[m
+@@ -1,85 +0,0 @@[m
+-class TuristicPointsController < ApplicationController[m
+-  # GET /turistic_points[m
+-  # GET /turistic_points.xml[m
+-  def index[m
+-    @turistic_points = TuristicPoint.paginate(:per_page => 10, :page => params[[m
+-[m
+-    respond_to do |format|[m
+-      format.html # index.html.erb[m
+-      format.xml  { render :xml => @turistic_points }[m
+-    end[m
+-  end[m
+-[m
+-  # GET /turistic_points/1[m
+-  # GET /turistic_points/1.xml[m
+-  def show[m
+-    @turistic_point = TuristicPoint.find(params[:id])[m
+-[m
+:[K[K[?1l>]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git --help
+usage: git [--version] [--exec-path[=GIT_EXEC_PATH]] [--html-path] [-p|--paginate|--no-pager] [--bare] [--git-dir=GIT_DIR] [--work-tree=GIT_WORK_TREE] [--help] COMMAND [ARGS]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and merge with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+See 'git help COMMAND' for more information on a specific command.
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   destroy
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/controllers/turistic_points_controller.rb
+#	deleted:    app/helpers/turistic_points_helper.rb
+#	deleted:    app/models/turistic_point.rb
+#	deleted:    app/views/layouts/tourpoints.html.erb
+#	deleted:    app/views/layouts/turistic_points-old.html.erb
+#	deleted:    app/views/layouts/turistic_points.html.erb
+#	deleted:    app/views/turistic_points/edit.html.erb
+#	deleted:    app/views/turistic_points/index.html.erb
+#	deleted:    app/views/turistic_points/new.html.erb
+#	deleted:    app/views/turistic_points/show.html.erb
+#	deleted:    db/migrate/20100324033735_create_turistic_points.rb
+#	modified:   destroy
+#	deleted:    test/fixtures/turistic_points.yml
+#	deleted:    test/functional/turistic_points_controller_test.rb
+#	deleted:    test/unit/helpers/turistic_points_helper_test.rb
+#	deleted:    test/unit/turistic_point_test.rb
+#
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git --help rm
+[?1049h[?1h=GIT-RM(1)                         Git Manual                         GIT-RM(1)[m
+[m
+[1mNAME[0m[m
+       git-rm - Remove files from the working tree and from the index[m
+[m
+[1mSYNOPSIS[0m[m
+       [4mgit[24m [4mrm[24m [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch] [--quiet][m
+       [--] <file>...[m
+[m
+[1mDESCRIPTION[0m[m
+       Remove files from the index, or from the working tree and the index.[m
+       [4mgit-rm[24m will not remove a file from just your working directory. (There[m
+       is no option to remove a file only from the work tree and yet keep it[m
+       in the index; use /bin/rm if you want to do that.) The files being[m
+       removed have to be identical to the tip of the branch, and no updates[m
+       to their contents can be staged in the index, though that default[m
+       behavior can be overridden with the -f option. When [4m--cached[24m is given,[m
+       the staged content has to match either the tip of the branch or the[m
+       file on disk, allowing the file to be removed from just the index.[m
+[m
+[1mOPTIONS[0m[m
+       <file>...[m
+           Files to remove. Fileglobs (e.g.  *.c) can be given to remove all[m
+[7m Manual page git-rm(1) line 1[27m[K[K           matching files. If you want git to expand file glob characters, you[m
+[7m Manual page git-rm(1) line 2[27m[K[K           may need to shell-escape them. A leading directory name (e.g.  dir[m
+[7m Manual page git-rm(1) line 5[27m[K[K           to remove dir/file1 and dir/file2) can be given to remove all files[m
+[7m Manual page git-rm(1) line 6[27m[K[K           in the directory, and recursively all sub-directories, but this[m
+[7m Manual page git-rm(1) line 7[27m[K[K           requires the -r option to be explicitly given.[m
+[7m Manual page git-rm(1) line 8[27m[K[K[m
+[7m Manual page git-rm(1) line 9[27m[K[K       -f, --force[m
+[7m Manual page git-rm(1) line 10[27m[K[K           Override the up-to-date check.[m
+[7m Manual page git-rm(1) line 11[27m[K[K[m
+[7m Manual page git-rm(1) line 12[27m[K[K       -n, --dry-run[m
+[7m Manual page git-rm(1) line 13[27m[K[K           Don’t actually remove any file(s). Instead, just show if they exist[m
+[7m Manual page git-rm(1) line 14[27m[K[K           in the index and would otherwise be removed by the command.[m
+[7m Manual page git-rm(1) line 15[27m[K[K[m
+[7m Manual page git-rm(1) line 16[27m[K[K       -r[m
+[7m Manual page git-rm(1) line 17[27m[K[K           Allow recursive removal when a leading directory name is given.[m
+[7m Manual page git-rm(1) line 18[27m[K[K[m
+[7m Manual page git-rm(1) line 19[27m[K[K       --[m
+[7m Manual page git-rm(1) line 20[27m[K[K           This option can be used to separate command-line options from the[m
+[7m Manual page git-rm(1) line 21[27m[K[K           list of files, (useful when filenames might be mistaken for[m
+[7m Manual page git-rm(1) line 22[27m[K[K           command-line options).[m
+[7m Manual page git-rm(1) line 23[27m[K[K[m
+[7m Manual page git-rm(1) line 24[27m[K[K       --cached[m
+[7m Manual page git-rm(1) line 25[27m[K[K           Use this option to unstage and remove paths only from the index.[m
+[7m Manual page git-rm(1) line 26[27m[K[K           Working tree files, whether modified or not, will be left alone.[m
+[7m Manual page git-rm(1) line 27[27m[K[K[m
+[7m Manual page git-rm(1) line 28[27m[K[K       --ignore-unmatch[m
+[7m Manual page git-rm(1) line 29[27m[K[K           Exit with a zero status even if no files matched.[m
+[7m Manual page git-rm(1) line 30[27m[K[K[m
+[7m Manual page git-rm(1) line 31[27m[K[K       -q, --quiet[m
+[7m Manual page git-rm(1) line 32[27m[K[K[m
+[7m Manual page git-rm(1) line 33[27m[K[K           [4mgit-rm[24m normally outputs one line (in the form of an "rm" command)[m
+[7m Manual page git-rm(1) line 34[27m[K[K           for each file removed. This option suppresses that output.[m
+[7m Manual page git-rm(1) line 35[27m[K[K[m
+[7m Manual page git-rm(1) line 36[27m[K[K[1mDISCUSSION[0m[m
+[7m Manual page git-rm(1) line 37[27m[K[K [KESCESC[KOO[KAA[K[HM           Don’t actually remove any file(s). Instead, just show if they exist[m
+[24;1H[K[7m Manual page git-rm(1) line 36[27m[K[K [KESCESC[KOO[KAA[K[HM       -n, --dry-run[m
+[24;1H[K[7m Manual page git-rm(1) line 35[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page git-rm(1) line 34[27m[K[K [KESCESC[KOO[KAA[K[HM           Override the up-to-date check.[m
+[24;1H[K[7m Manual page git-rm(1) line 33[27m[K[K [KESCESC[KOO[KAA[K[HM       -f, --force[m
+[24;1H[K[7m Manual page git-rm(1) line 32[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page git-rm(1) line 31[27m[K[K [KESCESC[KOO[KAA[K[HM           requires the -r option to be explicitly given.[m
+[24;1H[K[7m Manual page git-rm(1) line 30[27m[K[K [KESCESC[KOO[KAA[K[HM           in the directory, and recursively all sub-directories, but this[m
+[24;1H[K[7m Manual page git-rm(1) line 29[27m[K[K [KESCESC[KOO[KAA[K[HM           to remove dir/file1 and dir/file2) can be given to remove all files[m
+[24;1H[K[7m Manual page git-rm(1) line 28[27m[K[K [KESCESC[KOO[KAA[K[HM           may need to shell-escape them. A leading directory name (e.g.  dir[m
+[24;1H[K[7m Manual page git-rm(1) line 27[27m[K[K [KESCESC[KOO[KAA[K[HM           matching files. If you want git to expand file glob characters, you[m
+[24;1H[K[7m Manual page git-rm(1) line 26[27m[K[K [KESCESC[KOO[KAA[K[HM           Files to remove. Fileglobs (e.g.  *.c) can be given to remove all[m
+[24;1H[K[7m Manual page git-rm(1) line 25[27m[K[K [KESCESC[KOO[KAA[K[HM       <file>...[m
+[24;1H[K[7m Manual page git-rm(1) line 24[27m[K[K [KESCESC[KOO[KAA[K[HM[1mOPTIONS[0m[m
+[24;1H[K[7m Manual page git-rm(1) line 23[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page git-rm(1) line 22[27m[K[K [KESCESC[KOO[KBB[K           command-line options).[m
+[7m Manual page git-rm(1) line 23[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 24[27m[K[K [KESCESC[KOO[KBB[K       --cached[m
+[7m Manual page git-rm(1) line 25[27m[K[K [KESCESC[KOO[KBB[K           Use this option to unstage and remove paths only from the index.[m
+[7m Manual page git-rm(1) line 26[27m[K[K [KESCESC[KOO[KBB[K           Working tree files, whether modified or not, will be left alone.[m
+[7m Manual page git-rm(1) line 27[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 28[27m[K[K [KESCESC[KOO[KBB[K       --ignore-unmatch[m
+[7m Manual page git-rm(1) line 29[27m[K[K [KESCESC[KOO[KBB[K           Exit with a zero status even if no files matched.[m
+[7m Manual page git-rm(1) line 30[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 31[27m[K[K [KESCESC[KOO[KBB[K       -q, --quiet[m
+[7m Manual page git-rm(1) line 32[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 33[27m[K[K [KESCESC[KOO[KBB[K           [4mgit-rm[24m normally outputs one line (in the form of an "rm" command)[m
+[7m Manual page git-rm(1) line 34[27m[K[K [KESCESC[KOO[KBB[K           for each file removed. This option suppresses that output.[m
+[7m Manual page git-rm(1) line 35[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 36[27m[K[K [KESCESC[KOO[KBB[K[1mDISCUSSION[0m[m
+[7m Manual page git-rm(1) line 37[27m[K[K [KESCESC[KOO[KBB[K       The <file> list given to the command can be exact pathnames, file glob[m
+[7m Manual page git-rm(1) line 38[27m[K[K [KESCESC[KOO[KBB[K       patterns, or leading directory names. The command removes only the[m
+[7m Manual page git-rm(1) line 39[27m[K[K [KESCESC[KOO[KBB[K       paths that are known to git. Giving the name of a file that you have[m
+[7m Manual page git-rm(1) line 40[27m[K[K [KESCESC[KOO[KBB[K       not told git about does not remove that file.[m
+[7m Manual page git-rm(1) line 41[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 42[27m[K[K [KESCESC[KOO[KBB[K       File globbing matches across directory boundaries. Thus, given two[m
+[7m Manual page git-rm(1) line 43[27m[K[K [KESCESC[KOO[KBB[K       directories d and d2, there is a difference between using git rm[m
+[7m Manual page git-rm(1) line 44[27m[K[K [KESCESC[KOO[KBB[K       \´d\*\´ and git rm \´d/\*\´, as the former will also remove all of[m
+[7m Manual page git-rm(1) line 45[27m[K[K [KESCESC[KOO[KBB[K       directory d2.[m
+[7m Manual page git-rm(1) line 46[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 47[27m[K[K [KESCESC[KOO[KBB[K[1mEXAMPLES[0m[m
+[7m Manual page git-rm(1) line 48[27m[K[K [KESCESC[KOO[KBB[K       git rm Documentation/\\*.txt[m
+[7m Manual page git-rm(1) line 49[27m[K[K [KESCESC[KOO[KBB[K           Removes all \*.txt files from the index that are under the[m
+[7m Manual page git-rm(1) line 50[27m[K[K [KESCESC[KOO[KBB[K           Documentation directory and any of its subdirectories.[m
+[7m Manual page git-rm(1) line 51[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 52[27m[K[K [KESCESC[KOO[KBB[K           Note that the asterisk \* is quoted from the shell in this example;[m
+[7m Manual page git-rm(1) line 53[27m[K[K [KESCESC[KOO[KBB[K           this lets git, and not the shell, expand the pathnames of files and[m
+[7m Manual page git-rm(1) line 54[27m[K[K [KESCESC[KOO[KBB[K           subdirectories under the Documentation/ directory.[m
+[7m Manual page git-rm(1) line 55[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 56[27m[K[K [KESCESC[KOO[KBB[K       git rm -f git-*.sh[m
+[7m Manual page git-rm(1) line 57[27m[K[K [KESCESC[KOO[KBB[K           Because this example lets the shell expand the asterisk (i.e. you[m
+[7m Manual page git-rm(1) line 58[27m[K[K [KESCESC[KOO[KBB[K           are listing the files explicitly), it does not remove[m
+[7m Manual page git-rm(1) line 59[27m[K[K [KESCESC[KOO[KBB[K           subdir/git-foo.sh.[m
+[7m Manual page git-rm(1) line 60[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 61[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page git-rm(1) line 62[27m[K[K [KESCESC[KOO[KBB[K       [1mgit-add[0m(1)[m
+[7m Manual page git-rm(1) line 63[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 64[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page git-rm(1) line 65[27m[K[K [KESCESC[KOO[KBB[K       Written by Linus Torvalds <[1mtorvalds@osdl.org[0m[1]>[m
+[7m Manual page git-rm(1) line 66[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 67[27m[K[K [KESCESC[KOO[KBB[K[1mDOCUMENTATION[0m[m
+[7m Manual page git-rm(1) line 68[27m[K[K [KESCESC[KOO[KBB[K       Documentation by Junio C Hamano and the git-list[m
+[7m Manual page git-rm(1) line 69[27m[K[K [KESCESC[KOO[KBB[K       <[1mgit@vger.kernel.org[0m[2]>.[m
+[7m Manual page git-rm(1) line 70[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 71[27m[K[K [KESCESC[KOO[KBB[K[1mGIT[0m[m
+[7m Manual page git-rm(1) line 72[27m[K[K [KESCESC[KOO[KBB[K       Part of the [1mgit[0m(1) suite[m
+[7m Manual page git-rm(1) line 73[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 74[27m[K[K [KESCESC[KOO[KBB[K[1mNOTES[0m[m
+[7m Manual page git-rm(1) line 75[27m[K[K [KESCESC[KOO[KBB[K        1. torvalds@osdl.org[m
+[7m Manual page git-rm(1) line 76[27m[K[K [KESCESC[KOO[KBB[K           mailto:torvalds@osdl.org[m
+[7m Manual page git-rm(1) line 77[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 78[27m[K[K [KESCESC[KOO[KBB[K        2. git@vger.kernel.org[m
+[7m Manual page git-rm(1) line 79[27m[K[K [KESCESC[KOO[KBB[K           mailto:git@vger.kernel.org[m
+[7m Manual page git-rm(1) line 80[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page git-rm(1) line 81[27m[K[K [KESCESC[KOO[KBB[KGit 1.6.3.3                       07/02/2009                         GIT-RM(1)[m
+[7m Manual page git-rm(1) line 82[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page git-rm(1) line 82/106 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page git-rm(1) line 82/106 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page git-rm(1) line 82/106 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page git-rm(1) line 82/106 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page git-rm(1) line 82/106 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page git-rm(1) line 82/106 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page git-rm(1) line 82/106 (END)[27m[K[K [KESCESC[K^J^J[K[7m Manual page git-rm(1) line 82/106 (END)[27m[K[K[?1l>[?1049l]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git rm app/views/layouts/turistic_points.html .erb
+rm 'app/views/layouts/turistic_points.html.erb'
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    app/views/layouts/turistic_points.html.erb
+#	modified:   destroy
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/controllers/turistic_points_controller.rb
+#	deleted:    app/helpers/turistic_points_helper.rb
+#	deleted:    app/models/turistic_point.rb
+#	deleted:    app/views/layouts/tourpoints.html.erb
+#	deleted:    app/views/layouts/turistic_points-old.html.erb
+#	deleted:    app/views/turistic_points/edit.html.erb
+#	deleted:    app/views/turistic_points/index.html.erb
+#	deleted:    app/views/turistic_points/new.html.erb
+#	deleted:    app/views/turistic_points/show.html.erb
+#	deleted:    db/migrate/20100324033735_create_turistic_points.rb
+#	modified:   destroy
+#	deleted:    test/fixtures/turistic_points.yml
+#	deleted:    test/functional/turistic_points_controller_test.rb
+#	deleted:    test/unit/helpers/turistic_points_helper_test.rb
+#	deleted:    test/unit/turistic_point_test.rb
+#
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git push heroku mu[Kaster
+Everything up-to-date
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ hr[Keroku --help
+Unknown command. Run 'heroku help' for usage information.
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku help
+=== General Commands
+
+help                         # show this usage
+version                      # show the gem version
+
+list                         # list your apps
+create [<name>]              # create a new app
+
+keys                         # show your user's public keys
+keys:add [<path to keyfile>] # add a public key
+keys:remove <keyname>        # remove a key by name (user@host)
+keys:clear                   # remove all keys
+
+info                         # show app info, like web url and git repo
+open                         # open the app in a web browser
+rename <newname>             # rename the app
+
+dynos <qty>                  # scale to qty web processes
+workers <qty>                # scale to qty background processes
+
+sharing:add <email>          # add a collaborator
+sharing:remove <email>       # remove a collaborator
+sharing:transfer <email>     # transfers the app ownership
+
+domains:add <domain>         # add a custom domain name
+domains:remove <domain>      # remove a custom domain name
+domains:clear                # remove all custom domains
+
+ssl:add <pem> <key>          # add SSL cert to the app
+ssl:remove <domain>          # removes SSL cert from the app domain
+
+rake <command>               # remotely execute a rake command
+console <command>            # remotely execute a single console command
+console                      # start an interactive console to the remote app
+
+restart                      # restart app servers
+logs                         # fetch recent log output for debugging
+logs:cron                    # fetch cron log output
+
+maintenance:on               # put the app into maintenance mode
+maintenance:off              # take the app out of maintenance mode
+
+config                       # display the app's config vars (environment)
+config:add key=val [...]     # add one or more config vars
+config:remove key [...]      # remove one or more config vars
+config:clear                 # clear user-set vars and reset to default
+
+stack                        # show current stack and list of available stacks
+stack:migrate                # prepare migration of this app to a new stack
+
+db:pull [<database_url>]     # pull the app's database into a local database
+db:push [<database_url>]     # push a local database into the app's remote database
+db:reset                     # reset the database for the app
+
+bundles                      # list bundles for the app
+bundles:capture [<bundle>]   # capture a bundle of the app's code and data
+bundles:download             # download most recent app bundle as a tarball
+bundles:download <bundle>    # download the named bundle
+bundles:animate <bundle>     # animate a bundle into a new app
+bundles:destroy <bundle>     # destroy the named bundle
+
+addons                       # list installed addons
+addons:info                  # list all available addons
+addons:add name [key=value]  # install addon (with zero or more config vars)
+addons:remove name           # uninstall an addons
+addons:clear                 # uninstall all addons
+
+destroy                      # destroy the app permanently
+
+=== Plugins
+
+plugins                      # list installed plugins
+plugins:install <url>        # install the plugin from the specified git url
+plugins:uninstall <url/name> # remove the specified plugin
+
+=== Example:
+
+ rails myapp
+ cd myapp
+ git init
+ git add .
+ git commit -m "my new app"
+ heroku create
+ git push heroku master
+
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku bundles
+nervie has no bundles.
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku info
+=== nervie
+Web URL:        http://nervie.heroku.com/
+Git Repo:       git@heroku.com:nervie.git
+Dynos:          1
+Workers:        0
+Repo size:      664k
+Slug size:      320k
+Stack:          aspen-mri-1.8.6
+Data size:      88k in 5 tables
+Owner:          ramoel@gmail.com
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku rm infobundles[3Phelp--helpgit push heroku master[12Pstatusrm app/views/layouts/turistic_points.html..erb[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C rm app/views/layouts/turistic_points.html.e[1Prb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C rm app/views/layouts/turistic_points.html.er[1Pb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C rm app/views/layouts/turistic_points.html.erb[K[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ h rm app/views/layouts/turistic_points.html.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [Ce rm app/views/layouts/turistic_points.html.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[Cr rm app/views/layouts/turistic_points.html.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[Co rm app/views/layouts/turistic_points.html.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[Ck rm app/views/layouts/turistic_points.html.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[C[Cu rm app/views/layouts/turistic_points.html.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[C[C[C
+
+Unknown command. Run 'heroku help' for usage information.
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku rm app/views/layouts/turistic_points.httml.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[C[C[C[Cinfo[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbundles[3Phelp--helpgit push heroku master[12Pstatusrm app/views/layouts/turistic_points.html..erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[Cstatus[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    app/views/layouts/turistic_points.html.erb
+#	modified:   destroy
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/controllers/turistic_points_controller.rb
+#	deleted:    app/helpers/turistic_points_helper.rb
+#	deleted:    app/models/turistic_point.rb
+#	deleted:    app/views/layouts/tourpoints.html.erb
+#	deleted:    app/views/layouts/turistic_points-old.html.erb
+#	deleted:    app/views/turistic_points/edit.html.erb
+#	deleted:    app/views/turistic_points/index.html.erb
+#	deleted:    app/views/turistic_points/new.html.erb
+#	deleted:    app/views/turistic_points/show.html.erb
+#	deleted:    db/migrate/20100324033735_create_turistic_points.rb
+#	modified:   destroy
+#	deleted:    test/fixtures/turistic_points.yml
+#	deleted:    test/functional/turistic_points_controller_test.rb
+#	deleted:    test/unit/helpers/turistic_points_helper_test.rb
+#	deleted:    test/unit/turistic_point_test.rb
+#
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git statusheroku rm app/views/layouts/turistic_points.httml.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ [C[C[C[C[C[C[Cinfo[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbundles[3Phelp--helpgit push heroku master[12Pstatuspush heroku master
+Everything up-to-date
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git push heroku master[12Pstatusheroku rm app/views/layouts/turistic_points.httml.erb[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git status[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush heroku master[Kgit cho[Kecou[K[Kkout
+D	app/controllers/turistic_points_controller.rb
+D	app/helpers/turistic_points_helper.rb
+D	app/models/turistic_point.rb
+D	app/views/layouts/tourpoints.html.erb
+D	app/views/layouts/turistic_points-old.html.erb
+D	app/views/layouts/turistic_points.html.erb
+D	app/views/turistic_points/edit.html.erb
+D	app/views/turistic_points/index.html.erb
+D	app/views/turistic_points/new.html.erb
+D	app/views/turistic_points/show.html.erb
+D	db/migrate/20100324033735_create_turistic_points.rb
+M	destroy
+D	test/fixtures/turistic_points.yml
+D	test/functional/turistic_points_controller_test.rb
+D	test/unit/helpers/turistic_points_helper_test.rb
+D	test/unit/turistic_point_test.rb
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    app/views/layouts/turistic_points.html.erb
+#	modified:   destroy
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    app/controllers/turistic_points_controller.rb
+#	deleted:    app/helpers/turistic_points_helper.rb
+#	deleted:    app/models/turistic_point.rb
+#	deleted:    app/views/layouts/tourpoints.html.erb
+#	deleted:    app/views/layouts/turistic_points-old.html.erb
+#	deleted:    app/views/turistic_points/edit.html.erb
+#	deleted:    app/views/turistic_points/index.html.erb
+#	deleted:    app/views/turistic_points/new.html.erb
+#	deleted:    app/views/turistic_points/show.html.erb
+#	deleted:    db/migrate/20100324033735_create_turistic_points.rb
+#	modified:   destroy
+#	deleted:    test/fixtures/turistic_points.yml
+#	deleted:    test/functional/turistic_points_controller_test.rb
+#	deleted:    test/unit/helpers/turistic_points_helper_test.rb
+#	deleted:    test/unit/turistic_point_test.rb
+#
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git add .
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop
