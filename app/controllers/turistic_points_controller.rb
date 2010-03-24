@@ -2,7 +2,7 @@ class TuristicPointsController < ApplicationController
   # GET /turistic_points
   # GET /turistic_points.xml
   def index
-    @turistic_points = TuristicPoint.all
+    @turistic_points = TuristicPoint.paginate(:per_page => 10, :page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb

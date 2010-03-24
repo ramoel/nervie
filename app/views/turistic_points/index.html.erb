@@ -11,23 +11,15 @@
       <table class="table">
         <tr>             
           <th class="first">ID</th>
-										<th>
-					<%= t("activerecord.attributes.turistic_point.name", :default => t("activerecord.labels.name", :default => "Name")) %>
-</th>
-					          <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th><%= t("activerecord.attributes.turistic_point.name", :default => t("activerecord.labels.name", :default => "Name")) %></th>
+          <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
           <th class="last">&nbsp;</th>
         </tr>
         <% @turistic_points.each do |turistic_point| -%>
         <tr class="<%= cycle("odd", "even") %>">
-          <td>
-            <%= turistic_point.id %>
-          </td>
-										<td>
-						<%= link_to turistic_point.name, turistic_point_path(turistic_point) %>
-					</td>
-										<td>
-            <%= turistic_point.created_at %>
-          </td>
+          <td><%= turistic_point.id %></td>
+          <td><%= link_to turistic_point.name, turistic_point_path(turistic_point) %></td>
+          <td><%= turistic_point.created_at %></td>
           <td class="last">
             <%= link_to "#{t("web-app-theme.show", :default => "Show")}", turistic_point_path(turistic_point) %> |
             <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_turistic_point_path(turistic_point) %> |
