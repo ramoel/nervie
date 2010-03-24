@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :turistic_points
+
   map.resources :hosts
   map.resources :cities
   map.resources :users
