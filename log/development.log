@@ -4705,3 +4705,107 @@ Processing SessionsController#new (for 127.0.0.1 at 2010-03-24 11:23:23) [GET]
 Rendering template within layouts/application
 Rendering sessions/new
 Completed in 82ms (View: 80, DB: 32) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (248.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (42.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-24 11:26:26) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 291) | 302 Found [http://localhost/signup]
+  [4;35;1mSQL (18.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (17.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-24 11:26:32) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 83ms (View: 80, DB: 35) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (60.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (13.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-24 11:34:09) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 74) | 302 Found [http://localhost/signup]
+  [4;35;1mSQL (37.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (48.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-24 11:34:09) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 138ms (View: 136, DB: 86) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (12.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (41.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 11:34:21) [GET]
+
+ActionController::RoutingError (No route matches "/ignup" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (12.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (210.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-24 11:34:26) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 223) | 302 Found [http://localhost/signup]
+  [4;35;1mSQL (214.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (309.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-24 11:34:27) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 81ms (View: 79, DB: 524) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (38.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-24 11:34:57) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (14.8ms)
+Rendered users/_sidebar (0.1ms)
+Completed in 110ms (View: 106, DB: 69) | 200 OK [http://localhost/signup]
+  [4;35;1mSQL (18.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (15.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-24 11:36:38) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (13.9ms)
+Rendered users/_sidebar (0.1ms)
+Completed in 101ms (View: 99, DB: 34) | 200 OK [http://localhost/signup]
+  [4;35;1mSQL (12.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (33.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-03-24 11:36:55) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 45) | 302 Found [http://localhost/users]
+  [4;35;1mSQL (43.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (24.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-03-24 11:36:56) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Completed in 84ms (View: 81, DB: 68) | 200 OK [http://localhost/session/new]
+  [4;35;1mSQL (50.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (73.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-03-24 11:37:05) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (12.7ms)
+Rendered users/_sidebar (0.1ms)
+Completed in 95ms (View: 92, DB: 124) | 200 OK [http://localhost/signup]
