@@ -5,10 +5,6 @@ class AddFieldsToTourpoints < ActiveRecord::Migration
     add_column :tourpoints, :whengo, :string
     add_column :tourpoints, :whogo, :string
     add_column :tourpoints, :price, :string
-    add_column :tourpoints, :photo_file_name, :string
-    add_column :tourpoints, :photo_content_type, :string
-    add_column :tourpoints, :photo_file_size, :integer
-    add_column :tourpoints, :photo_updated_at, :datetime
   end
 
   def self.down
@@ -17,9 +13,5 @@ class AddFieldsToTourpoints < ActiveRecord::Migration
     remove_column :tourpoints, :whengo
     remove_column :tourpoints, :whygo
     remove_column :tourpoints, :localization
-    remove_column :tourpoints, :photo_file_name
-    remove_column :tourpoints, :photo_content_type
-    remove_column :tourpoints, :photo_file_size
-    remove_column :tourpoints, :photo_updated_at
   end
 end

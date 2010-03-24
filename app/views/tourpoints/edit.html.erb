@@ -9,7 +9,7 @@
   <div class="content">            
     <h2 class="title"><%= t("web-app-theme.edit", :default => "Edit") %> Tourpoint</h2>
     <div class="inner">
-      <% form_for @tourpoint, :url => tourpoint_path(@tourpoint), :html => { :class => :form } do |f| -%>
+      <% form_for @tourpoint, :url => tourpoint_path(@tourpoint), :html => { :class => :form, :multipart => true } do |f| -%>
         <%= render :partial => "form", :locals => {:f => f} %>
       <% end -%>
     </div>

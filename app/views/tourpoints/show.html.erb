@@ -21,7 +21,38 @@
 
         <p>
           <b><%= t("activerecord.attributes.tourpoint.city_id", :default => t("activerecord.labels.city_id", :default => "City")) %>:</b>
-          <%= @tourpoint.city_id %>
+          <%= City.find_by_id(@tourpoint.city_id) %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.tourpoint.localization", :default => t("activerecord.labels.localization", :default => "Where Is")) %>:</b>
+          <%= @tourpoint.localization %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.tourpoint.whygo", :default => t("activerecord.labels.whygo", :default => "Why go")) %>:</b>
+          <%= @tourpoint.whygo %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.tourpoint.whengo", :default => t("activerecord.labels.whengo", :default => "When go")) %>:</b>
+          <%= @tourpoint.whengo %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.tourpoint.whogo", :default => t("activerecord.labels.whogo", :default => "Who go")) %>:</b>
+          <%= @tourpoint.whogo %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.tourpoint.price", :default => t("activerecord.labels.pricde", :default => "How much")) %>:</b>
+          <%= @tourpoint.price %>
+        </p>
+
+        <p>
+          <b><%= image_tag @tourpoint.photo.url %>:</b>
+          <%= image_tag @tourpoint.photo.url(:thumbs) %>
+
         </p>
 
         <p>

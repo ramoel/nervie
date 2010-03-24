@@ -1,3 +1,4 @@
+<%= f.error_messages %>
 
   <div class="group">
     <%= f.label :name, t("activerecord.attributes.tourpoint.name", :default => "Name"), :class => :label %>
@@ -13,7 +14,7 @@
 
   <div class="group">
     <%= f.label :city_id, t("activerecord.attributes.tourpoint.city_id", :default => "City"), :class => :label %>
-    <%= f.select(:city_id, City.find(:all).collect {|u| [u.nome, u.id]}, :prompt => 'Select') %>
+    <%= f.select(:city_id, City.find(:all).collect {|u| [u.nome, u.id]}, :prompt => 'Select the City') %>
     <span class="description">Ex: a simple text</span>
   </div>
 
@@ -51,7 +52,12 @@
     <%= f.label :photo %><br />
     <%= f.file_field :photo %>
   </div>
-        
+
+  <% unless @tourpoint.new_record? || !tourpoint.photo? %>
+    <p>
+      <%= image_tag(@tourpoint.photo.url, :align => "absmiddle") %>
+    </p>
+  <% end %>
   <div class="group navform wat-cf">
     <button class="button" type="submit">
       <%= image_tag("web-app-theme/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>

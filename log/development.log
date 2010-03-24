@@ -6774,3 +6774,580 @@ Rendering tourpoints/new
 Rendered tourpoints/_form (233.8ms)
 Rendered tourpoints/_sidebar (0.1ms)
 Completed in 476ms (View: 271, DB: 327) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (62.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (229.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 18:33:41) [GET]
+  [4;36;1mTourpoint Columns (470.7ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (301.4ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (336.9ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (669.6ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 1245ms (View: 126, DB: 1401) | 200 OK [http://localhost/tourpoints/new]
+  [4;35;1mSQL (64.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (28.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 18:33:53) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"Mãe Bonifácia", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>"teste"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;35;1mTourpoint Columns (114.4ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (108.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (74.0ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (undefined method `avatar_content_type' for #<Tourpoint:0xb674b268>):
+  app/controllers/tourpoints_controller.rb:49:in `create'
+  app/controllers/tourpoints_controller.rb:48:in `create'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (211.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (79.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 18:36:00) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"Mãe Bonifácia", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>"teste"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;36;1mTourpoint Columns (191.6ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (97.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (52.6ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (63.3ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (115.9ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (210.3ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 719ms (View: 177, DB: 812) | 200 OK [http://localhost/tourpoints]
+  [4;35;1mSQL (63.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (64.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 18:36:07) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"Mãe Bonifácia", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>"teste"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;35;1mTourpoint Columns (182.8ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (53.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (199.2ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (55.1ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (177.4ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (257.3ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 807ms (View: 117, DB: 796) | 200 OK [http://localhost/tourpoints]
+  [4;36;1mSQL (299.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (401.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#index (for 127.0.0.1 at 2010-03-24 18:36:14) [GET]
+  [4;36;1mTourpoint Load (257.7ms)[0m   [0;1mSELECT * FROM `tourpoints` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering tourpoints/index
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 416ms (View: 151, DB: 958) | 200 OK [http://localhost/tourpoints]
+  [4;35;1mSQL (51.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (87.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 18:36:18) [GET]
+  [4;35;1mTourpoint Columns (309.7ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (33.9ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (97.3ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (160.4ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 567ms (View: 117, DB: 580) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (307.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (47.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 18:36:30) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>"teste"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;36;1mTourpoint Columns (222.0ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (67.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (60.7ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (110.1ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (88.6ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (221.3ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 749ms (View: 180, DB: 903) | 200 OK [http://localhost/tourpoints]
+  [4;35;1mSQL (195.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (113.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 18:44:46) [GET]
+  [4;35;1mTourpoint Columns (207.5ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (108.9ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (157.7ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (298.1ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 600ms (View: 118, DB: 783) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (120.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (267.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 18:45:01) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>"teste"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;36;1mTourpoint Columns (99.6ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (218.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (101.3ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (124.0ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (169.0ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (323.1ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 851ms (View: 122, DB: 1100) | 200 OK [http://localhost/tourpoints]
+  [4;35;1mSQL (171.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (77.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 18:52:23) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>"teste"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;35;1mTourpoint Columns (144.1ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (56.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (91.7ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (82.7ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (255.9ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (492.2ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 905ms (View: 253, DB: 880) | 200 OK [http://localhost/tourpoints]
+  [4;36;1mSQL (84.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 19:12:26) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>"teste"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;36;1mTourpoint Columns (148.4ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (133.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (268.6ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (155.4ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (163.5ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (350.3ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 1020ms (View: 128, DB: 1054) | 200 OK [http://localhost/tourpoints]
+  [4;35;1mSQL (85.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (66.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 19:12:33) [GET]
+  [4;35;1mTourpoint Columns (196.3ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (80.7ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (164.3ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (278.8ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 636ms (View: 185, DB: 593) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (63.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (95.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 19:12:44) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>"teste"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;36;1mTourpoint Columns (83.9ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (247.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (75.6ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (134.6ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (154.8ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (319.1ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 835ms (View: 125, DB: 855) | 200 OK [http://localhost/tourpoints]
+  [4;36;1mSQL (243.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (170.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (100.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (128.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (119.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (195.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (105.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (161.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (103.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (75.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddFieldsToTourpoints (20100324171812)
+  [4;36;1mSQL (1287.9ms)[0m   [0;1mALTER TABLE `tourpoints` DROP `price`[0m
+  [4;35;1mSQL (456.3ms)[0m   [0mALTER TABLE `tourpoints` DROP `whogo`[0m
+  [4;36;1mSQL (509.5ms)[0m   [0;1mALTER TABLE `tourpoints` DROP `whengo`[0m
+  [4;35;1mSQL (545.2ms)[0m   [0mALTER TABLE `tourpoints` DROP `whygo`[0m
+  [4;36;1mSQL (487.2ms)[0m   [0;1mALTER TABLE `tourpoints` DROP `localization`[0m
+  [4;35;1mSQL (667.2ms)[0m   [0mALTER TABLE `tourpoints` DROP `photo_file_name`[0m
+  [4;36;1mSQL (448.6ms)[0m   [0;1mALTER TABLE `tourpoints` DROP `photo_content_type`[0m
+  [4;35;1mSQL (412.0ms)[0m   [0mALTER TABLE `tourpoints` DROP `photo_file_size`[0m
+  [4;36;1mSQL (522.7ms)[0m   [0;1mALTER TABLE `tourpoints` DROP `photo_updated_at`[0m
+  [4;35;1mSQL (113.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100324171812'[0m
+  [4;36;1mSQL (115.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (92.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (106.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (134.9ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (112.1ms)[0m   [0;1mdescribe `cities`[0m
+  [4;35;1mSQL (64.7ms)[0m   [0mSHOW KEYS FROM `cities`[0m
+  [4;36;1mSQL (86.6ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mSQL (292.7ms)[0m   [0mdescribe `hosts`[0m
+  [4;36;1mSQL (137.3ms)[0m   [0;1mSHOW KEYS FROM `hosts`[0m
+  [4;35;1mSQL (60.3ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (126.3ms)[0m   [0;1mdescribe `tourpoints`[0m
+  [4;35;1mSQL (194.6ms)[0m   [0mSHOW KEYS FROM `tourpoints`[0m
+  [4;36;1mSQL (113.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (219.2ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (60.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (307.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (180.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (44.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (486.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100319201249)
+Migrating to CreateCities (20100319204932)
+Migrating to CreateHosts (20100320020336)
+Migrating to CreateTourpoints (20100324041826)
+Migrating to AddFieldsToTourpoints (20100324171812)
+  [4;36;1mSQL (1079.5ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `localization` varchar(255)[0m
+  [4;35;1mSQL (521.1ms)[0m   [0mALTER TABLE `tourpoints` ADD `whygo` varchar(255)[0m
+  [4;36;1mSQL (588.7ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `whengo` varchar(255)[0m
+  [4;35;1mSQL (431.5ms)[0m   [0mALTER TABLE `tourpoints` ADD `whogo` varchar(255)[0m
+  [4;36;1mSQL (688.5ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `price` varchar(255)[0m
+  [4;35;1mSQL (978.5ms)[0m   [0mALTER TABLE `tourpoints` ADD `photo_file_name` varchar(255)[0m
+  [4;36;1mSQL (886.0ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `photo_content_type` varchar(255)[0m
+  [4;35;1mSQL (417.7ms)[0m   [0mALTER TABLE `tourpoints` ADD `photo_file_size` int(11)[0m
+  [4;36;1mSQL (971.7ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `photo_updated_at` datetime[0m
+  [4;35;1mSQL (138.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100324171812')[0m
+Migrating to AddAttachmentsPhotoToTourpoint (20100324223849)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate column name 'photo_file_name': ALTER TABLE `tourpoints` ADD `photo_file_name` varchar(255)[0m
+  [4;36;1mSQL (233.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (143.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (136.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (75.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (170.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (147.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddFieldsToTourpoints (20100324171812)
+  [4;36;1mSQL (561.0ms)[0m   [0;1mALTER TABLE `tourpoints` DROP `price`[0m
+  [4;35;1mSQL (656.1ms)[0m   [0mALTER TABLE `tourpoints` DROP `whogo`[0m
+  [4;36;1mSQL (651.6ms)[0m   [0;1mALTER TABLE `tourpoints` DROP `whengo`[0m
+  [4;35;1mSQL (439.7ms)[0m   [0mALTER TABLE `tourpoints` DROP `whygo`[0m
+  [4;36;1mSQL (589.1ms)[0m   [0;1mALTER TABLE `tourpoints` DROP `localization`[0m
+  [4;35;1mSQL (499.0ms)[0m   [0mALTER TABLE `tourpoints` DROP `photo_file_name`[0m
+  [4;36;1mSQL (555.3ms)[0m   [0;1mALTER TABLE `tourpoints` DROP `photo_content_type`[0m
+  [4;35;1mSQL (466.5ms)[0m   [0mALTER TABLE `tourpoints` DROP `photo_file_size`[0m
+  [4;36;1mSQL (744.5ms)[0m   [0;1mALTER TABLE `tourpoints` DROP `photo_updated_at`[0m
+  [4;35;1mSQL (130.9ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100324171812'[0m
+  [4;36;1mSQL (132.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (94.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (141.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (119.9ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (186.3ms)[0m   [0;1mdescribe `cities`[0m
+  [4;35;1mSQL (194.6ms)[0m   [0mSHOW KEYS FROM `cities`[0m
+  [4;36;1mSQL (152.5ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mSQL (173.1ms)[0m   [0mdescribe `hosts`[0m
+  [4;36;1mSQL (162.0ms)[0m   [0;1mSHOW KEYS FROM `hosts`[0m
+  [4;35;1mSQL (101.4ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (184.9ms)[0m   [0;1mdescribe `tourpoints`[0m
+  [4;35;1mSQL (147.8ms)[0m   [0mSHOW KEYS FROM `tourpoints`[0m
+  [4;36;1mSQL (115.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (131.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (186.9ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (106.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (78.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (144.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100319201249)
+Migrating to CreateCities (20100319204932)
+Migrating to CreateHosts (20100320020336)
+Migrating to CreateTourpoints (20100324041826)
+Migrating to AddFieldsToTourpoints (20100324171812)
+  [4;36;1mSQL (771.3ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `localization` varchar(255)[0m
+  [4;35;1mSQL (755.4ms)[0m   [0mALTER TABLE `tourpoints` ADD `whygo` varchar(255)[0m
+  [4;36;1mSQL (387.8ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `whengo` varchar(255)[0m
+  [4;35;1mSQL (422.8ms)[0m   [0mALTER TABLE `tourpoints` ADD `whogo` varchar(255)[0m
+  [4;36;1mSQL (454.3ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `price` varchar(255)[0m
+  [4;35;1mSQL (142.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100324171812')[0m
+Migrating to AddAttachmentsPhotoToTourpoint (20100324223849)
+  [4;36;1mSQL (437.6ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `photo_file_name` varchar(255)[0m
+  [4;35;1mSQL (477.9ms)[0m   [0mALTER TABLE `tourpoints` ADD `photo_content_type` varchar(255)[0m
+  [4;36;1mSQL (455.1ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `photo_file_size` int(11)[0m
+  [4;35;1mSQL (576.6ms)[0m   [0mALTER TABLE `tourpoints` ADD `photo_updated_at` datetime[0m
+  [4;36;1mSQL (87.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100324223849')[0m
+  [4;35;1mSQL (121.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (123.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (95.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (366.5ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mSQL (399.6ms)[0m   [0mdescribe `cities`[0m
+  [4;36;1mSQL (253.0ms)[0m   [0;1mSHOW KEYS FROM `cities`[0m
+  [4;35;1mSQL (139.3ms)[0m   [0mSHOW FIELDS FROM `hosts`[0m
+  [4;36;1mSQL (198.1ms)[0m   [0;1mdescribe `hosts`[0m
+  [4;35;1mSQL (101.1ms)[0m   [0mSHOW KEYS FROM `hosts`[0m
+  [4;36;1mSQL (140.0ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (156.6ms)[0m   [0mdescribe `tourpoints`[0m
+  [4;36;1mSQL (152.3ms)[0m   [0;1mSHOW KEYS FROM `tourpoints`[0m
+  [4;35;1mSQL (323.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (196.2ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (109.6ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (183.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (108.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 19:40:49) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>"teste"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;35;1mTourpoint Columns (153.2ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (306.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (119.8ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (139.5ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (160.9ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (330.7ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 1023ms (View: 124, DB: 1171) | 200 OK [http://localhost/tourpoints]
+  [4;36;1mSQL (126.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (122.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 19:40:54) [GET]
+  [4;36;1mTourpoint Columns (88.4ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (237.7ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (452.0ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (720.6ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 966ms (View: 178, DB: 1027) | 200 OK [http://localhost/tourpoints/new]
+  [4;35;1mSQL (164.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (166.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 19:41:07) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>"teste"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;35;1mTourpoint Columns (389.8ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (272.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (250.5ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (327.3ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (219.4ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (574.2ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 1606ms (View: 123, DB: 1791) | 200 OK [http://localhost/tourpoints]
+  [4;36;1mSQL (84.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (76.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 19:47:22) [GET]
+  [4;36;1mTourpoint Columns (188.0ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (74.0ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (181.0ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (289.0ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 644ms (View: 191, DB: 604) | 200 OK [http://localhost/tourpoints/new]
+  [4;35;1mSQL (136.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (77.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 19:48:29) [GET]
+  [4;35;1mTourpoint Columns (453.1ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (96.3ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (174.9ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+
+ActionView::TemplateError (undefined method `merge' for "Select some photo":String) on line #52 of app/views/tourpoints/_form.html.erb:
+49: 
+50:   <div class="group">
+51:     <%= f.label :photo %><br />
+52:     <%= f.file_field :photo, t("activerecord.atributes.tourpoint.photo", :default => "Select some photo") %>
+53:   </div>
+54: 
+55:   <div class="group navform wat-cf">
+
+    app/views/tourpoints/_form.html.erb:52
+    app/views/tourpoints/new.html.erb:12
+    app/views/tourpoints/new.html.erb:11
+    app/controllers/tourpoints_controller.rb:32:in `new'
+
+Rendered rescues/_trace (120.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (75.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (90.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 19:48:46) [GET]
+  [4;36;1mTourpoint Columns (222.8ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (76.6ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (104.8ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (214.3ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 540ms (View: 126, DB: 570) | 200 OK [http://localhost/tourpoints/new]
+  [4;35;1mSQL (82.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (79.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 19:48:52) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"", "description"=>""}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;35;1mTourpoint Columns (59.4ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (163.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (123.6ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (84.8ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (169.1ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (269.5ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 729ms (View: 107, DB: 763) | 200 OK [http://localhost/tourpoints]
+  [4;36;1mSQL (91.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (143.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 19:54:32) [GET]
+  [4;36;1mTourpoint Columns (220.5ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (114.0ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (229.2ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+
+ActionView::TemplateError (undefined local variable or method `tourpoint' for #<ActionView::Base:0xb65a619c>) on line #56 of app/views/tourpoints/_form.html.erb:
+53:     <%= f.file_field :photo %>
+54:   </div>
+55: 
+56:   <% unless tourpoint.new_record? || !tourpoint.photo? %>
+57:     <p>
+58:       <%= image_tag(@tourpoint.photo.url, :align => "absmiddle") %>
+59:     </p>
+
+    app/views/tourpoints/_form.html.erb:56
+    app/views/tourpoints/new.html.erb:12
+    app/views/tourpoints/new.html.erb:11
+    app/controllers/tourpoints_controller.rb:32:in `new'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (323.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (119.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 19:56:29) [GET]
+  [4;35;1mTourpoint Columns (202.4ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (111.1ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (289.0ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (429.4ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 796ms (View: 184, DB: 1045) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (156.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (110.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 19:56:46) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>""}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;36;1mTourpoint Columns (214.2ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (177.8ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (172.2ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (102.9ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (303.2ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (437.9ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 1110ms (View: 126, DB: 1237) | 200 OK [http://localhost/tourpoints]
+  [4;35;1mSQL (81.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (97.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 20:03:10) [GET]
+  [4;35;1mTourpoint Columns (73.3ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (102.0ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (166.3ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (302.6ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 545ms (View: 193, DB: 520) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (90.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (72.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 20:03:22) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>""}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;36;1mTourpoint Columns (98.8ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (144.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (90.2ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (165.8ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (274.9ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 733ms (View: 112, DB: 762) | 200 OK [http://localhost/tourpoints]
+  [4;35;1mSQL (186.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (105.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 20:04:05) [GET]
+  [4;35;1mTourpoint Columns (177.0ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (123.9ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (177.1ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (335.7ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 617ms (View: 129, DB: 770) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (119.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (118.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#create (for 127.0.0.1 at 2010-03-24 20:04:16) [POST]
+  Parameters: {"tourpoint"=>{"price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>""}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;36;1mTourpoint Columns (137.8ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (142.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mTourpoint Create (149.0ms)[0m   [0;1mINSERT INTO `tourpoints` (`name`, `price`, `created_at`, `photo_file_size`, `updated_at`, `photo_file_name`, `whengo`, `photo_content_type`, `photo_updated_at`, `localization`, `whygo`, `description`, `city_id`, `whogo`) VALUES('teste', '', '2010-03-24 23:04:16', NULL, '2010-03-24 23:04:16', NULL, '', NULL, NULL, '', '', '', 1, '')[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (131.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/tourpoints/1
+Completed in 586ms (DB: 799) | 302 Found [http://localhost/tourpoints]
+  [4;36;1mSQL (139.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (129.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#show (for 127.0.0.1 at 2010-03-24 20:04:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTourpoint Columns (205.9ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mTourpoint Load (211.3ms)[0m   [0mSELECT * FROM `tourpoints` WHERE (`tourpoints`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering tourpoints/show
+  [4;36;1mCity Columns (148.3ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mCity Load (193.5ms)[0m   [0mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) LIMIT 1[0m
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 935ms (View: 165, DB: 1029) | 200 OK [http://localhost/tourpoints/1]
+  [4;36;1mSQL (98.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (97.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 20:04:20) [GET]
+
+ActionController::RoutingError (No route matches "/photos/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (88.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (108.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 20:04:22) [GET]
+
+ActionController::RoutingError (No route matches "/photos/thumbs/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
