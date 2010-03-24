@@ -325,4 +325,31 @@ Sending data
                                                                                schema_migrat:   0% |                                          | ETA:  --:--:--schema_migrat: 100% |==========================================| ETA:  00:00:00schema_migrat: 100% |==========================================| Time: 00:00:00
                                                                                tourpoints:    100% |==========================================| ETA:  --:--:--tourpoints:    100% |==========================================| ETA:  --:--:--tourpoints:    100% |==========================================| Time: 00:00:00
                                                                                users:         100% |==========================================| ETA:  --:--:--users:         100% |==========================================| ETA:  --:--:--users:         100% |==========================================| Time: 00:00:00
-                                                                               cities:        100% |==========================================| ETA:  --:--:--cities:        100% |==========================================| ETA:  --:--:--cities:        100% |========================================
+                                                                               cities:        100% |==========================================| ETA:  --:--:--cities:        100% |==========================================| ETA:  --:--:--cities:        100% |==========================================| Time: 00:00:00
+                                                                               hosts:         100% |==========================================| ETA:  --:--:--hosts:         100% |==========================================| ETA:  --:--:--hosts:         100% |==========================================| Time: 00:00:00
+Sending indexes
+Resetting sequences
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku db:push[K[K[K[K[K[K[K[Kr[K ragek[K[K[Kke db:migrate
+(in /disk1/home/slugs/154103_1bc2041_5713/mnt)
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku db:c[Kdrop:all
+Unknown command. Run 'heroku help' for usage information.
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heorku[K[K[K[K[Kr[Keroku rake db:droap[K[Kp:all
+(in /disk1/home/slugs/154103_1bc2041_5713/mnt)
+This task only modifies local databases. kctngqsxak is on a remote host.
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku rake db:drop:all[5Pdb:drop:allrake db:migrate[8Pdb:push
+Auto-detected local database: mysql://consumidorweb3:bleh123@mysql04.consumidorweb.com/consumidorweb3?encoding=utf8
+Sending schema
+Sending data
+5 tables, 4 records
+                                                                               schema_migrat:   0% |                                          | ETA:  --:--:--schema_migrat: 100% |==========================================| ETA:  00:00:00schema_migrat: 100% |==========================================| Time: 00:00:00
+                                                                               tourpoints:    100% |==========================================| ETA:  --:--:--tourpoints:    100% |==========================================| ETA:  --:--:--tourpoints:    100% |==========================================| Time: 00:00:00
+                                                                               users:         100% |==========================================| ETA:  --:--:--users:         100% |==========================================| ETA:  --:--:--users:         100% |==========================================| Time: 00:00:00
+                                                                               cities:        100% |==========================================| ETA:  --:--:--cities:        100% |==========================================| ETA:  --:--:--cities:        100% |==========================================| Time: 00:00:00
+                                                                               hosts:         100% |==========================================| ETA:  --:--:--hosts:         100% |==========================================| ETA:  --:--:--hosts:         100% |==========================================| Time: 00:00:00
+Sending indexes
+Resetting sequences
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku db:pushrake db:drop:all[5Pdb:drop:allrake db:migrate[8Pdb:pushsudo gem install taps[7Pheroku db:pushrake db:migrategit add . && git commit -m "zerada db e criadoo scaffold de tourpoints"
+[master 435346e] zerada db e criado scaffold de tourpoints
+ 1 files changed, 65 insertions(+), 1 deletions(-)
+]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ git add . && git commit -m "zerada db e criadoo scaffold de tourpoints"[A]0;ramoel@ramoel-laptop: ~/web/nervieramoel@ramoel-laptop:~/web/nervie$ heroku db:push[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crake db:drop:all[5Pdb:drop:allrake db:migrate[8Pdb:pushsudo gem install taps[7Pheroku db:pushrake db:mig
