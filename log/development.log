@@ -7630,3 +7630,104 @@ ActionController::RoutingError (No route matches "/images/tourpoints/photos/1/Ne
   
 
 Rendering rescues/layout (not_found)
+  [4;35;1mSQL (114.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (121.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#show (for 127.0.0.1 at 2010-03-24 20:39:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTourpoint Columns (117.4ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mTourpoint Load (138.1ms)[0m   [0;1mSELECT * FROM `tourpoints` WHERE (`tourpoints`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering tourpoints/show
+  [4;35;1mCity Columns (266.4ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mCity Load (163.3ms)[0m   [0;1mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) LIMIT 1[0m
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 817ms (View: 120, DB: 920) | 200 OK [http://localhost/tourpoints/1]
+  [4;35;1mSQL (172.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (78.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 20:39:50) [GET]
+  Parameters: {"1269473173"=>nil}
+
+ActionController::RoutingError (No route matches "/images/tourpoints/photos/1/Nervie_Parque_Mae_Bonifacia_thumbs.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (309.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (310.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#edit (for 127.0.0.1 at 2010-03-24 20:41:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mTourpoint Columns (264.5ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mTourpoint Load (307.1ms)[0m   [0;1mSELECT * FROM `tourpoints` WHERE (`tourpoints`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering tourpoints/edit
+  [4;35;1mCity Load (436.2ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (621.3ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (1091.9ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 1827ms (View: 187, DB: 2249) | 200 OK [http://localhost/tourpoints/1/edit]
+  [4;35;1mSQL (70.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (86.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#update (for 127.0.0.1 at 2010-03-24 20:41:48) [PUT]
+  Parameters: {"tourpoint"=>{"photo"=>#<File:/tmp/RackMultipart20100324-2638-805aea-0>, "price"=>"", "name"=>"teste", "whengo"=>"", "whygo"=>"", "localization"=>"", "whogo"=>"", "city_id"=>"1", "description"=>""}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU=", "id"=>"1"}
+  [4;35;1mTourpoint Columns (187.4ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mTourpoint Load (189.4ms)[0m   [0;1mSELECT * FROM `tourpoints` WHERE (`tourpoints`.`id` = 1) [0m
+  [4;35;1mSQL (207.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mTourpoint Update (174.4ms)[0m   [0;1mUPDATE `tourpoints` SET `updated_at` = '2010-03-24 23:41:49', `photo_updated_at` = '2010-03-24 23:41:49' WHERE `id` = 1[0m
+[paperclip] Saving attachments.
+[paperclip] deleting /home/ramoel/web/nervie/public/images/tourpoints/photos/1/Nervie_Parque_Mae_Bonifacia_original.jpg
+[paperclip] deleting /home/ramoel/web/nervie/public/images/tourpoints/photos/1/Nervie_Parque_Mae_Bonifacia_large.png
+[paperclip] deleting /home/ramoel/web/nervie/public/images/tourpoints/photos/1/Nervie_Parque_Mae_Bonifacia_medium.png
+[paperclip] deleting /home/ramoel/web/nervie/public/images/tourpoints/photos/1/Nervie_Parque_Mae_Bonifacia_thumb.png
+[paperclip] saving /home/ramoel/web/nervie/public/images/tourpoints/photos/1/Nervie_Parque_Mae_Bonifacia_large.png
+[paperclip] saving /home/ramoel/web/nervie/public/images/tourpoints/photos/1/Nervie_Parque_Mae_Bonifacia_medium.png
+[paperclip] saving /home/ramoel/web/nervie/public/images/tourpoints/photos/1/Nervie_Parque_Mae_Bonifacia_thumb.png
+[paperclip] saving /home/ramoel/web/nervie/public/images/tourpoints/photos/1/Nervie_Parque_Mae_Bonifacia_original.jpg
+  [4;35;1mSQL (151.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/tourpoints/1
+Completed in 1373ms (DB: 1067) | 302 Found [http://localhost/tourpoints/1]
+  [4;36;1mSQL (140.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (114.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#show (for 127.0.0.1 at 2010-03-24 20:41:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTourpoint Columns (249.6ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mTourpoint Load (181.3ms)[0m   [0mSELECT * FROM `tourpoints` WHERE (`tourpoints`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering tourpoints/show
+  [4;36;1mCity Columns (163.8ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mCity Load (293.9ms)[0m   [0mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) LIMIT 1[0m
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 1092ms (View: 192, DB: 1143) | 200 OK [http://localhost/tourpoints/1]
+  [4;36;1mSQL (105.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (149.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 20:41:53) [GET]
+  Parameters: {"1269474109"=>nil}
+
+ActionController::RoutingError (No route matches "/images/tourpoints/photos/1/Nervie_Parque_Mae_Bonifacia_thumbs.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (102.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (144.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#show (for 127.0.0.1 at 2010-03-24 20:42:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTourpoint Columns (274.4ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mTourpoint Load (264.6ms)[0m   [0mSELECT * FROM `tourpoints` WHERE (`tourpoints`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering tourpoints/show
+  [4;36;1mCity Columns (253.4ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mCity Load (98.9ms)[0m   [0mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) LIMIT 1[0m
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 1039ms (View: 136, DB: 1138) | 200 OK [http://localhost/tourpoints/1]
