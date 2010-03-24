@@ -5064,3 +5064,1682 @@ Rendering template within layouts/application
 Rendering users/index
 Rendered users/_sidebar (0.1ms)
 Completed in 224ms (View: 145, DB: 212) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (80.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#index (for 127.0.0.1 at 2010-03-24 13:02:22) [GET]
+  [4;35;1mTourpoint Load (64.4ms)[0m   [0mSELECT * FROM `tourpoints` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering tourpoints/index
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 176ms (View: 103, DB: 223) | 200 OK [http://localhost/tourpoints]
+  [4;36;1mSQL (93.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 13:02:23) [GET]
+  [4;36;1mTourpoint Columns (21.6ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+ERROR: compiling _run_erb_app47views47tourpoints47_form46html46erb_locals_f_form_object RAISED compile error
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:16: syntax error, unexpected ',', expecting ')'
+..., { :include_blank => true }), :class => 'select' ).to_s); @...
+                              ^
+Function body:           def _run_erb_app47views47tourpoints47_form46html46erb_locals_f_form_object(local_assigns)
+            old_output_buffer = output_buffer;form = local_assigns[:form];f = local_assigns[:f];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n  <div class=\"group\">\n    "
+
+; @output_buffer.concat(( f.label :name, t("activerecord.attributes.tourpoint.name", :default => "Name"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :name, :class => 'text_field' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :description, t("activerecord.attributes.tourpoint.description", :default => "Description"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :description, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :city_id, t("activerecord.attributes.tourpoint.city_id", :default => "City"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.  select("city", "city_id", City.all.collect {|p| [ p.name, p.id ] }, { :include_blank => true }), :class => 'select' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n        \n<div class=\"group navform wat-cf\">\n  <button class=\"button\" type=\"submit\">\n    "
+
+
+
+
+
+; @output_buffer.concat(( image_tag("web-app-theme/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t("web-app-theme.save", :default => "Save") ).to_s); @output_buffer.concat "\n  </button>  \n  "
+
+; @output_buffer.concat(( link_to "#{image_tag("web-app-theme/cross.png", :alt => "#{t("web-app-theme.cancel", :default => "Cancel")}")} #{t("web-app-theme.cancel", :default => "Cancel")}", tourpoints_path, :class => "button" ).to_s); @output_buffer.concat " \n</div>"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:28:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/ramoel/web/nervie/app/views/tourpoints/new.html.erb:12:in `_run_erb_app47views47tourpoints47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/form_helper.rb:499:in `fields_for'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/home/ramoel/web/nervie/app/views/tourpoints/new.html.erb:11:in `_run_erb_app47views47tourpoints47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/ramoel/web/nervie/app/controllers/tourpoints_controller.rb:32:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:16: syntax error, unexpected ',', expecting ')'
+..., { :include_blank => true }), :class => 'select' ).to_s); @...
+                              ^) on line #16 of app/views/tourpoints/_form.html.erb:
+13: 
+14:   <div class="group">
+15:     <%= f.label :city_id, t("activerecord.attributes.tourpoint.city_id", :default => "City"), :class => :label %>
+16:     <%= f.  select("city", "city_id", City.all.collect {|p| [ p.name, p.id ] }, { :include_blank => true }), :class => 'select' %>
+17:     <span class="description">Ex: a simple text</span>
+18:   </div>
+19:         
+
+    app/views/tourpoints/_form.html.erb:28:in `compile!'
+    app/views/tourpoints/new.html.erb:12
+    app/views/tourpoints/new.html.erb:11
+    app/controllers/tourpoints_controller.rb:32:in `new'
+
+Rendered rescues/_trace (59.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (90.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (54.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 13:02:45) [GET]
+  [4;35;1mTourpoint Columns (42.9ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+ERROR: compiling _run_erb_app47views47tourpoints47_form46html46erb_locals_f_form_object RAISED compile error
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:16: syntax error, unexpected ',', expecting ')'
+..., { :include_blank => true }), :class => 'select' ).to_s); @...
+                              ^
+Function body:           def _run_erb_app47views47tourpoints47_form46html46erb_locals_f_form_object(local_assigns)
+            old_output_buffer = output_buffer;form = local_assigns[:form];f = local_assigns[:f];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n  <div class=\"group\">\n    "
+
+; @output_buffer.concat(( f.label :name, t("activerecord.attributes.tourpoint.name", :default => "Name"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :name, :class => 'text_field' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :description, t("activerecord.attributes.tourpoint.description", :default => "Description"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :description, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :city_id, t("activerecord.attributes.tourpoint.city_id", :default => "City"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.select("city", "city_id", City.all.collect {|p| [ p.name, p.id ] }, { :include_blank => true }), :class => 'select' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n        \n<div class=\"group navform wat-cf\">\n  <button class=\"button\" type=\"submit\">\n    "
+
+
+
+
+
+; @output_buffer.concat(( image_tag("web-app-theme/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t("web-app-theme.save", :default => "Save") ).to_s); @output_buffer.concat "\n  </button>  \n  "
+
+; @output_buffer.concat(( link_to "#{image_tag("web-app-theme/cross.png", :alt => "#{t("web-app-theme.cancel", :default => "Cancel")}")} #{t("web-app-theme.cancel", :default => "Cancel")}", tourpoints_path, :class => "button" ).to_s); @output_buffer.concat " \n</div>"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:28:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/ramoel/web/nervie/app/views/tourpoints/new.html.erb:12:in `_run_erb_app47views47tourpoints47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/form_helper.rb:499:in `fields_for'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/home/ramoel/web/nervie/app/views/tourpoints/new.html.erb:11:in `_run_erb_app47views47tourpoints47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/ramoel/web/nervie/app/controllers/tourpoints_controller.rb:32:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:16: syntax error, unexpected ',', expecting ')'
+..., { :include_blank => true }), :class => 'select' ).to_s); @...
+                              ^) on line #16 of app/views/tourpoints/_form.html.erb:
+13: 
+14:   <div class="group">
+15:     <%= f.label :city_id, t("activerecord.attributes.tourpoint.city_id", :default => "City"), :class => :label %>
+16:     <%= f.select("city", "city_id", City.all.collect {|p| [ p.name, p.id ] }, { :include_blank => true }), :class => 'select' %>
+17:     <span class="description">Ex: a simple text</span>
+18:   </div>
+19:         
+
+    app/views/tourpoints/_form.html.erb:28:in `compile!'
+    app/views/tourpoints/new.html.erb:12
+    app/views/tourpoints/new.html.erb:11
+    app/controllers/tourpoints_controller.rb:32:in `new'
+
+Rendered rescues/_trace (59.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (18.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (19.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 13:03:02) [GET]
+  [4;36;1mTourpoint Columns (22.0ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (131.7ms)[0m   [0mSELECT * FROM `cities` [0m
+
+ActionView::TemplateError (undefined method `merge' for []:Array) on line #16 of app/views/tourpoints/_form.html.erb:
+13: 
+14:   <div class="group">
+15:     <%= f.label :city_id, t("activerecord.attributes.tourpoint.city_id", :default => "City"), :class => :label %>
+16:     <%= f.select("city", "city_id", City.all.collect {|p| [ p.name, p.id ] }, { :include_blank => true }) %>
+17:     <span class="description">Ex: a simple text</span>
+18:   </div>
+19:         
+
+    app/views/tourpoints/_form.html.erb:16
+    app/views/tourpoints/new.html.erb:12
+    app/views/tourpoints/new.html.erb:11
+    app/controllers/tourpoints_controller.rb:32:in `new'
+
+Rendered rescues/_trace (62.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (178.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (33.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 13:03:40) [GET]
+  [4;36;1mTourpoint Columns (31.1ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (134.4ms)[0m   [0mSELECT * FROM `cities` [0m
+
+ActionView::TemplateError (undefined method `merge' for []:Array) on line #16 of app/views/tourpoints/_form.html.erb:
+13: 
+14:   <div class="group">
+15:     <%= f.label :city_id, t("activerecord.attributes.tourpoint.city_id", :default => "City"), :class => :label %>
+16:     <%= f.select("city", "city_id", City.all.collect {|p| [ p.nome, p.id ] }, { :include_blank => true }) %>
+17:     <span class="description">Ex: a simple text</span>
+18:   </div>
+19:         
+
+    app/views/tourpoints/_form.html.erb:16
+    app/views/tourpoints/new.html.erb:12
+    app/views/tourpoints/new.html.erb:11
+    app/controllers/tourpoints_controller.rb:32:in `new'
+
+Rendered rescues/_trace (63.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (75.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (13.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 13:05:23) [GET]
+  [4;36;1mTourpoint Columns (26.9ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (31.0ms)[0m   [0mSELECT * FROM `cities` [0m
+Rendered tourpoints/_form (121.7ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 243ms (View: 179, DB: 147) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (14.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 13:05:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (16.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (31.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 13:05:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (19.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (16.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#index (for 127.0.0.1 at 2010-03-24 13:05:33) [GET]
+  [4;36;1mCity Load (192.6ms)[0m   [0;1mSELECT * FROM `cities` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering cities/index
+Rendered cities/_sidebar (0.1ms)
+Completed in 294ms (View: 93, DB: 229) | 200 OK [http://localhost/cities]
+  [4;35;1mSQL (17.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (36.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#new (for 127.0.0.1 at 2010-03-24 13:05:36) [GET]
+  [4;35;1mCity Columns (21.9ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendering template within layouts/application
+Rendering cities/new
+Rendered cities/_form (37.4ms)
+Rendered cities/_sidebar (0.1ms)
+Completed in 162ms (View: 132, DB: 76) | 200 OK [http://localhost/cities/new]
+  [4;36;1mSQL (33.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (120.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 13:05:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (35.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (69.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 13:05:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (12.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#create (for 127.0.0.1 at 2010-03-24 13:06:22) [POST]
+  Parameters: {"city"=>{"fundacao(2i)"=>"4", "aniversario(1i)"=>"2010", "aniversario(2i)"=>"4", "fundacao(3i)"=>"8", "aniversario(3i)"=>"8", "nome"=>"Cuiabá", "populacao"=>"550.562", "estado"=>"MT", "fundacao(1i)"=>"1763"}, "authenticity_token"=>"ZeHmyOIvjiWp32X6lWFTID/9P5XFc8C42297mOPd+hU="}
+  [4;36;1mCity Columns (15.9ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Load (18.5ms)[0m   [0;1mSELECT `cities`.id FROM `cities` WHERE (`cities`.`nome` = BINARY 'Cuiabá') LIMIT 1[0m
+  [4;35;1mCity Create (66.4ms)[0m   [0mINSERT INTO `cities` (`fundacao`, `created_at`, `nome`, `updated_at`, `populacao`, `aniversario`, `estado`) VALUES('1763-04-08', '2010-03-24 16:06:22', 'Cuiabá', '2010-03-24 16:06:22', '550.562', '2010-04-08', 'MT')[0m
+  [4;36;1mSQL (136.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/cities/1
+Completed in 340ms (DB: 375) | 302 Found [http://localhost/cities]
+  [4;35;1mSQL (24.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (57.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CitiesController#show (for 127.0.0.1 at 2010-03-24 13:06:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCity Columns (88.3ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mCity Load (25.8ms)[0m   [0;1mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering cities/show
+Rendered cities/_sidebar (0.1ms)
+Completed in 217ms (View: 94, DB: 196) | 200 OK [http://localhost/cities/1]
+  [4;35;1mSQL (25.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (76.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 13:06:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/application_edit.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (13.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (29.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 13:06:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (50.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (10.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#index (for 127.0.0.1 at 2010-03-24 13:06:28) [GET]
+  [4;35;1mTourpoint Load (23.6ms)[0m   [0mSELECT * FROM `tourpoints` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering tourpoints/index
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 118ms (View: 87, DB: 85) | 200 OK [http://localhost/tourpoints]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (64.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 13:06:30) [GET]
+  [4;36;1mTourpoint Columns (20.2ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (43.5ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (19.2ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (74.6ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 195ms (View: 104, DB: 163) | 200 OK [http://localhost/tourpoints/new]
+  [4;35;1mSQL (53.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (108.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 13:06:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (38.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 13:06:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (57.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (45.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#index (for 127.0.0.1 at 2010-03-24 14:37:28) [GET]
+  [4;35;1mSQL (222.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTourpoint Columns (33.8ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (28.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTourpoint Columns (22.7ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0xb681defc>):
+  app/models/tourpoint.rb:2
+  app/controllers/tourpoints_controller.rb:8:in `index'
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (35.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (20.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (52.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (39.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (114.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (66.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (37.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (31.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100319201249)
+Migrating to CreateCities (20100319204932)
+Migrating to CreateHosts (20100320020336)
+Migrating to CreateTourpoints (20100324041826)
+Migrating to AddFieldsToTourpoints (20100324171812)
+  [4;36;1mSQL (936.5ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `localization` varchar(255)[0m
+  [4;35;1mSQL (513.5ms)[0m   [0mALTER TABLE `tourpoints` ADD `whygo` varchar(255)[0m
+  [4;36;1mSQL (386.4ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `whengo` varchar(255)[0m
+  [4;35;1mSQL (543.0ms)[0m   [0mALTER TABLE `tourpoints` ADD `whogo` varchar(255)[0m
+  [4;36;1mSQL (366.2ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `price` varchar(255)[0m
+  [4;35;1mSQL (522.1ms)[0m   [0mALTER TABLE `tourpoints` ADD `photo_file_name` varchar(255)[0m
+  [4;36;1mSQL (1800.5ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `photo_content_type` varchar(255)[0m
+  [4;35;1mSQL (599.5ms)[0m   [0mALTER TABLE `tourpoints` ADD `photo_file_size` int(11)[0m
+  [4;36;1mSQL (567.8ms)[0m   [0;1mALTER TABLE `tourpoints` ADD `photo_updated_at` datetime[0m
+  [4;35;1mSQL (118.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100324171812')[0m
+  [4;36;1mSQL (70.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (26.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (71.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (83.3ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (104.5ms)[0m   [0;1mdescribe `cities`[0m
+  [4;35;1mSQL (152.9ms)[0m   [0mSHOW KEYS FROM `cities`[0m
+  [4;36;1mSQL (49.3ms)[0m   [0;1mSHOW FIELDS FROM `hosts`[0m
+  [4;35;1mSQL (15.7ms)[0m   [0mdescribe `hosts`[0m
+  [4;36;1mSQL (41.8ms)[0m   [0;1mSHOW KEYS FROM `hosts`[0m
+  [4;35;1mSQL (30.9ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+  [4;36;1mSQL (20.4ms)[0m   [0;1mdescribe `tourpoints`[0m
+  [4;35;1mSQL (17.0ms)[0m   [0mSHOW KEYS FROM `tourpoints`[0m
+  [4;36;1mSQL (27.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (105.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (20.4ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (24.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (81.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#index (for 127.0.0.1 at 2010-03-24 14:41:04) [GET]
+  [4;35;1mSQL (21.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTourpoint Columns (24.1ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (26.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTourpoint Columns (20.0ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0xb6711bd0>):
+  app/models/tourpoint.rb:2
+  app/controllers/tourpoints_controller.rb:8:in `index'
+
+Rendered rescues/_trace (101.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (43.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (229.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#index (for 127.0.0.1 at 2010-03-24 14:42:27) [GET]
+  [4;35;1mSQL (203.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTourpoint Columns (65.1ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mSQL (16.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mTourpoint Columns (24.2ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+
+NoMethodError (undefined method `has_attached_file' for #<Class:0xb67fa22c>):
+  app/models/tourpoint.rb:2
+  app/controllers/tourpoints_controller.rb:8:in `index'
+
+Rendered rescues/_trace (44.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (29.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (294.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (29.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (29.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (77.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#index (for 127.0.0.1 at 2010-03-24 14:51:38) [GET]
+  [4;36;1mTourpoint Load (15.0ms)[0m   [0;1mSELECT * FROM `tourpoints` LIMIT 0, 10[0m
+Rendering template within layouts/application
+Rendering tourpoints/index
+Rendered tourpoints/_sidebar (0.6ms)
+Completed in 181ms (View: 158, DB: 123) | 200 OK [http://localhost/tourpoints]
+  [4;35;1mSQL (37.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (54.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 14:51:43) [GET]
+  [4;35;1mTourpoint Columns (141.3ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (78.3ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (29.2ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (128.8ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 379ms (View: 121, DB: 341) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (158.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (24.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 14:51:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (41.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (113.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 14:51:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (16.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (33.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 14:53:44) [GET]
+  [4;36;1mTourpoint Columns (49.2ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (50.8ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (140.0ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (209.5ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 369ms (View: 119, DB: 290) | 200 OK [http://localhost/tourpoints/new]
+  [4;35;1mSQL (34.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (44.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 14:53:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (42.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (122.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 14:53:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (28.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (96.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 15:09:02) [GET]
+  [4;35;1mTourpoint Columns (30.2ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (200.2ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (25.0ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (246.6ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 383ms (View: 118, DB: 380) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (36.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:09:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (25.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (23.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:09:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (53.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (169.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 15:18:28) [GET]
+  [4;36;1mTourpoint Columns (303.1ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+ERROR: compiling _run_erb_app47views47tourpoints47_form46html46erb_locals_f_form_object RAISED compile error
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting ')'
+...ion", :default => "Where is"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting ')'
+...whygo", :default => "Why go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting ')'
+...engo", :default => "When go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting ')'
+...whogo", :default => "Who go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting ')'
+...ice", :default => "How much"), :class => :label ).to_s); @ou...
+                              ^
+Function body:           def _run_erb_app47views47tourpoints47_form46html46erb_locals_f_form_object(local_assigns)
+            old_output_buffer = output_buffer;form = local_assigns[:form];f = local_assigns[:f];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n  <div class=\"group\">\n    "
+
+; @output_buffer.concat(( f.label :name, t("activerecord.attributes.tourpoint.name", :default => "Name"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :name, :class => 'text_field' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :description, t("activerecord.attributes.tourpoint.description", :default => "Description"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :description, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :city_id, t("activerecord.attributes.tourpoint.city_id", :default => "City"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.select(:city_id, City.find(:all).collect {|u| [u.nome, u.id]}, :prompt => 'Select') ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.localizacion", :default => "Where is"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :description, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.whygo", :default => "Why go"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :description, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.whengo", :default => "When go"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :description, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.whogo", :default => "Who go"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :description, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.price", :default => "How much"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :description, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :photo ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.file_field :photo ).to_s); @output_buffer.concat "\n  </div>\n        \n  <div class=\"group navform wat-cf\">\n    <button class=\"button\" type=\"submit\">\n      "
+
+
+
+
+; @output_buffer.concat(( image_tag("web-app-theme/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t("web-app-theme.save", :default => "Save") ).to_s); @output_buffer.concat "\n    </button>\n    "
+
+; @output_buffer.concat(( link_to "#{image_tag("web-app-theme/cross.png", :alt => "#{t("web-app-theme.cancel", :default => "Cancel")}")} #{t("web-app-theme.cancel", :default => "Cancel")}", tourpoints_path, :class => "button" ).to_s); @output_buffer.concat "\n  </div>"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:63:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/ramoel/web/nervie/app/views/tourpoints/new.html.erb:12:in `_run_erb_app47views47tourpoints47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/form_helper.rb:499:in `fields_for'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/home/ramoel/web/nervie/app/views/tourpoints/new.html.erb:11:in `_run_erb_app47views47tourpoints47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/ramoel/web/nervie/app/controllers/tourpoints_controller.rb:32:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting ')'
+...ion", :default => "Where is"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting ')'
+...whygo", :default => "Why go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting ')'
+...engo", :default => "When go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting ')'
+...whogo", :default => "Who go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting ')'
+...ice", :default => "How much"), :class => :label ).to_s); @ou...
+                              ^) on line #21 of app/views/tourpoints/_form.html.erb:
+18:   </div>
+19: 
+20:   <div class="group">
+21:     <%= f.label :, t("activerecord.attributes.tourpoint.localizacion", :default => "Where is"), :class => :label %>
+22:     <%= f.text_area :description, :class => 'text_area' %>
+23:     <span class="description">Ex: a simple text</span>
+24:   </div>
+
+    app/views/tourpoints/_form.html.erb:63:in `compile!'
+    app/views/tourpoints/new.html.erb:12
+    app/views/tourpoints/new.html.erb:11
+    app/controllers/tourpoints_controller.rb:32:in `new'
+
+Rendered rescues/_trace (110.6ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (20.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 15:20:36) [GET]
+  [4;35;1mTourpoint Columns (44.0ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+ERROR: compiling _run_erb_app47views47tourpoints47_form46html46erb_locals_f_form_object RAISED compile error
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting ')'
+...ion", :default => "Where is"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting ')'
+...whygo", :default => "Why go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting ')'
+...engo", :default => "When go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting ')'
+...whogo", :default => "Who go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting ')'
+...ice", :default => "How much"), :class => :label ).to_s); @ou...
+                              ^
+Function body:           def _run_erb_app47views47tourpoints47_form46html46erb_locals_f_form_object(local_assigns)
+            old_output_buffer = output_buffer;form = local_assigns[:form];f = local_assigns[:f];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n  <div class=\"group\">\n    "
+
+; @output_buffer.concat(( f.label :name, t("activerecord.attributes.tourpoint.name", :default => "Name"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :name, :class => 'text_field' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :description, t("activerecord.attributes.tourpoint.description", :default => "Description"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :description, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :city_id, t("activerecord.attributes.tourpoint.city_id", :default => "City"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.select(:city_id, City.find(:all).collect {|u| [u.nome, u.id]}, :prompt => 'Select') ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.localizacion", :default => "Where is"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :localization, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.whygo", :default => "Why go"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :whygo, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.whengo", :default => "When go"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :whengo, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.whogo", :default => "Who go"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :whogo, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.price", :default => "How much"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :price, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :photo ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.file_field :photo ).to_s); @output_buffer.concat "\n  </div>\n        \n  <div class=\"group navform wat-cf\">\n    <button class=\"button\" type=\"submit\">\n      "
+
+
+
+
+; @output_buffer.concat(( image_tag("web-app-theme/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t("web-app-theme.save", :default => "Save") ).to_s); @output_buffer.concat "\n    </button>\n    "
+
+; @output_buffer.concat(( link_to "#{image_tag("web-app-theme/cross.png", :alt => "#{t("web-app-theme.cancel", :default => "Cancel")}")} #{t("web-app-theme.cancel", :default => "Cancel")}", tourpoints_path, :class => "button" ).to_s); @output_buffer.concat "\n  </div>"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:63:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/ramoel/web/nervie/app/views/tourpoints/new.html.erb:12:in `_run_erb_app47views47tourpoints47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/form_helper.rb:499:in `fields_for'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/home/ramoel/web/nervie/app/views/tourpoints/new.html.erb:11:in `_run_erb_app47views47tourpoints47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/ramoel/web/nervie/app/controllers/tourpoints_controller.rb:32:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting ')'
+...ion", :default => "Where is"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting ')'
+...whygo", :default => "Why go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting ')'
+...engo", :default => "When go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting ')'
+...whogo", :default => "Who go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting ')'
+...ice", :default => "How much"), :class => :label ).to_s); @ou...
+                              ^) on line #21 of app/views/tourpoints/_form.html.erb:
+18:   </div>
+19: 
+20:   <div class="group">
+21:     <%= f.label :, t("activerecord.attributes.tourpoint.localizacion", :default => "Where is"), :class => :label %>
+22:     <%= f.text_area :localization, :class => 'text_area' %>
+23:     <span class="description">Ex: a simple text</span>
+24:   </div>
+
+    app/views/tourpoints/_form.html.erb:63:in `compile!'
+    app/views/tourpoints/new.html.erb:12
+    app/views/tourpoints/new.html.erb:11
+    app/controllers/tourpoints_controller.rb:32:in `new'
+
+Rendered rescues/_trace (53.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (22.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (147.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 15:21:07) [GET]
+  [4;36;1mTourpoint Columns (41.9ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+ERROR: compiling _run_erb_app47views47tourpoints47_form46html46erb_locals_f_form_object RAISED compile error
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting ')'
+...ion", :default => "Where is"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting ')'
+...whygo", :default => "Why go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting ')'
+...engo", :default => "When go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting ')'
+...whogo", :default => "Who go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting ')'
+...ice", :default => "How much"), :class => :label ).to_s); @ou...
+                              ^
+Function body:           def _run_erb_app47views47tourpoints47_form46html46erb_locals_f_form_object(local_assigns)
+            old_output_buffer = output_buffer;form = local_assigns[:form];f = local_assigns[:f];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "\n  <div class=\"group\">\n    "
+
+; @output_buffer.concat(( f.label :name, t("activerecord.attributes.tourpoint.name", :default => "Name"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_field :name, :class => 'text_field' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :description, t("activerecord.attributes.tourpoint.description", :default => "Description"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :description, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :city_id, t("activerecord.attributes.tourpoint.city_id", :default => "City"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.select(:city_id, City.find(:all).collect {|u| [u.nome, u.id]}, :prompt => 'Select') ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.localization", :default => "Where is"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :localization, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.whygo", :default => "Why go"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :whygo, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.whengo", :default => "When go"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :whengo, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.whogo", :default => "Who go"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :whogo, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :, t("activerecord.attributes.tourpoint.price", :default => "How much"), :class => :label ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.text_area :price, :class => 'text_area' ).to_s); @output_buffer.concat "\n    <span class=\"description\">Ex: a simple text</span>\n  </div>\n\n  <div class=\"group\">\n    "
+
+
+
+
+; @output_buffer.concat(( f.label :photo ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.file_field :photo ).to_s); @output_buffer.concat "\n  </div>\n        \n  <div class=\"group navform wat-cf\">\n    <button class=\"button\" type=\"submit\">\n      "
+
+
+
+
+; @output_buffer.concat(( image_tag("web-app-theme/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") ).to_s); @output_buffer.concat " "; @output_buffer.concat(( t("web-app-theme.save", :default => "Save") ).to_s); @output_buffer.concat "\n    </button>\n    "
+
+; @output_buffer.concat(( link_to "#{image_tag("web-app-theme/cross.png", :alt => "#{t("web-app-theme.cancel", :default => "Cancel")}")} #{t("web-app-theme.cancel", :default => "Cancel")}", tourpoints_path, :class => "button" ).to_s); @output_buffer.concat "\n  </div>"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:63:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/home/ramoel/web/nervie/app/views/tourpoints/new.html.erb:12:in `_run_erb_app47views47tourpoints47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/form_helper.rb:499:in `fields_for'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/home/ramoel/web/nervie/app/views/tourpoints/new.html.erb:11:in `_run_erb_app47views47tourpoints47new46html46erb'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/home/ramoel/web/nervie/app/controllers/tourpoints_controller.rb:32:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:21: syntax error, unexpected ',', expecting ')'
+...ion", :default => "Where is"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:27: syntax error, unexpected ',', expecting ')'
+...whygo", :default => "Why go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:33: syntax error, unexpected ',', expecting ')'
+...engo", :default => "When go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:39: syntax error, unexpected ',', expecting ')'
+...whogo", :default => "Who go"), :class => :label ).to_s); @ou...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...put_buffer.concat(( f.label :, t("activerecord.attributes.to...
+                              ^
+/home/ramoel/web/nervie/app/views/tourpoints/_form.html.erb:45: syntax error, unexpected ',', expecting ')'
+...ice", :default => "How much"), :class => :label ).to_s); @ou...
+                              ^) on line #21 of app/views/tourpoints/_form.html.erb:
+18:   </div>
+19: 
+20:   <div class="group">
+21:     <%= f.label :, t("activerecord.attributes.tourpoint.localization", :default => "Where is"), :class => :label %>
+22:     <%= f.text_area :localization, :class => 'text_area' %>
+23:     <span class="description">Ex: a simple text</span>
+24:   </div>
+
+    app/views/tourpoints/_form.html.erb:63:in `compile!'
+    app/views/tourpoints/new.html.erb:12
+    app/views/tourpoints/new.html.erb:11
+    app/controllers/tourpoints_controller.rb:32:in `new'
+
+Rendered rescues/_trace (53.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (40.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (127.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 15:23:55) [GET]
+  [4;35;1mTourpoint Columns (59.3ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (21.3ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (33.7ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (88.2ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 258ms (View: 132, DB: 282) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (21.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (58.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:23:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (31.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (26.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:23:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (23.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (60.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 15:27:00) [GET]
+  [4;36;1mTourpoint Columns (288.9ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (89.3ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (103.4ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (223.7ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 616ms (View: 124, DB: 566) | 200 OK [http://localhost/tourpoints/new]
+  [4;35;1mSQL (14.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (33.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:27:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (64.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (130.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:27:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (349.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (54.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 15:27:21) [GET]
+  [4;35;1mTourpoint Columns (98.4ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (24.1ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (62.3ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (120.1ms)
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 375ms (View: 129, DB: 588) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (16.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (74.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:27:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (29.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (41.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:27:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (13.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (104.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 15:29:06) [GET]
+  [4;36;1mTourpoint Columns (92.2ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;35;1mCity Load (135.2ms)[0m   [0mSELECT * FROM `cities` [0m
+  [4;36;1mCity Columns (27.1ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (194.2ms)
+Rendered tourpoints/_sidebar (0.1ms)
+Completed in 439ms (View: 175, DB: 372) | 200 OK [http://localhost/tourpoints/new]
+  [4;35;1mSQL (49.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (193.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:29:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (224.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (76.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:29:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (181.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (30.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#new (for 127.0.0.1 at 2010-03-24 15:29:29) [GET]
+  [4;35;1mTourpoint Columns (99.2ms)[0m   [0mSHOW FIELDS FROM `tourpoints`[0m
+Rendering template within layouts/application
+Rendering tourpoints/new
+  [4;36;1mCity Load (194.9ms)[0m   [0;1mSELECT * FROM `cities` [0m
+  [4;35;1mCity Columns (39.7ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+Rendered tourpoints/_form (269.9ms)
+Rendered tourpoints/_sidebar (0.6ms)
+Completed in 522ms (View: 179, DB: 546) | 200 OK [http://localhost/tourpoints/new]
+  [4;36;1mSQL (69.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:29:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/tick.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (17.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (24.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-24 15:29:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/web-app-theme/cross.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

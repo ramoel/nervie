@@ -296,6 +296,10 @@ input.checkbox {
   border-style: solid;
 }
 
+.form textarea.text_area {
+  height: 80px;
+}
+
 /* lists */
 
 ul.list {
