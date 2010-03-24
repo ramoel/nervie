@@ -53,7 +53,7 @@
     <%= f.file_field :photo %>
   </div>
 
-  <% unless @tourpoint.new_record? || !tourpoint.photo? %>
+  <% unless @tourpoint.new_record? || !@tourpoint.photo? %>
     <p>
       <%= image_tag(@tourpoint.photo.url, :align => "absmiddle") %>
     </p>

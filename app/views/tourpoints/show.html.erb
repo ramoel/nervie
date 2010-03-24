@@ -45,18 +45,18 @@
         </p>
 
         <p>
-          <b><%= t("activerecord.attributes.tourpoint.price", :default => t("activerecord.labels.pricde", :default => "How much")) %>:</b>
+          <b><%= t("activerecord.attributes.tourpoint.price", :default => t("activerecord.labels.price", :default => "How much")) %>:</b>
           <%= @tourpoint.price %>
         </p>
 
         <p>
-          <b><%= image_tag @tourpoint.photo.url %>:</b>
+          <b><%= t("activerecord.atributes.tourpoint.photo", :default => t("activerecord.labels.photo", :default => "Photo")) %>:</b>
           <%= image_tag @tourpoint.photo.url(:thumbs) %>
 
         </p>
 
         <p>
-          <%= image_tag @tourpoint.photo.url(:thumbs) %>
+          <%= image_tag @tourpoint.photo.url(:large) %>
         </p>
       <div class="wat-cf">
         <%= link_to "#{image_tag("web-app-theme/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}")} #{t("web-app-theme.edit", :default=> "Edit")}", edit_tourpoint_path(@tourpoint), :class => "button" %> 
