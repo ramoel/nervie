@@ -7731,3 +7731,17 @@ Rendering tourpoints/show
   [4;35;1mCity Load (98.9ms)[0m   [0mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) LIMIT 1[0m
 Rendered tourpoints/_sidebar (0.3ms)
 Completed in 1039ms (View: 136, DB: 1138) | 200 OK [http://localhost/tourpoints/1]
+  [4;36;1mSQL (12.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TourpointsController#show (for 127.0.0.1 at 2010-03-25 15:50:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mTourpoint Columns (107.9ms)[0m   [0;1mSHOW FIELDS FROM `tourpoints`[0m
+  [4;35;1mTourpoint Load (24.9ms)[0m   [0mSELECT * FROM `tourpoints` WHERE (`tourpoints`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering tourpoints/show
+  [4;36;1mCity Columns (31.6ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mCity Load (14.3ms)[0m   [0mSELECT * FROM `cities` WHERE (`cities`.`id` = 1) LIMIT 1[0m
+Rendered tourpoints/_sidebar (0.3ms)
+Completed in 310ms (View: 123, DB: 221) | 200 OK [http://localhost/tourpoints/1]
