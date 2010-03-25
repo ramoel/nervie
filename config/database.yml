@@ -28,4 +28,12 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 
-
+production:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: nervie
+  pool: 5
+  username: root
+  password: ra12mo23el34
+  host: 208.88.125.196
