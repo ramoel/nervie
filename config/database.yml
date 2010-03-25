@@ -20,9 +20,9 @@ development:
   reconnect: false
   database: nervie_development
   pool: 5
-  username: root@localhost
+  username: root
   password: ra12mo23el34
-  host: 208.88.125.196
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -34,9 +34,9 @@ test:
   reconnect: false
   database: nervie_test
   pool: 5
-  username: root@localhost
+  username: root
   password: ra12mo23el34
-  host: 208.88.125.196
+  host: localhost
 
 production:
   adapter: mysql
@@ -44,6 +44,6 @@ production:
   reconnect: false
   database: nervie_production
   pool: 5
-  username: root@localhost
+  username: root
   password: ra12mo23el34
-  host: 208.88.125.196
+  host: localhost
