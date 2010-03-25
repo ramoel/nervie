@@ -34,7 +34,7 @@ test:
   reconnect: false
   database: nervie_test
   pool: 5
-  username: root
+  username: root@localhost
   password: ra12mo23el34
   host: localhost
 
@@ -44,6 +44,6 @@ production:
   reconnect: false
   database: nervie_production
   pool: 5
-  username: root
+  username: root@localhost
   password: ra12mo23el34
   host: localhost
