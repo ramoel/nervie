@@ -194,7 +194,7 @@ development:
   # 'enabled').
   # NOTE: for initial evaluation purposes, you may want to temporarily 
   # turn the agent on in development mode.
-  monitor_mode: false
+  monitor_mode: true
 
   # Rails Only - when running in Developer Mode, the New Relic Agent will 
   # present performance information on the last 100 transactions you have
@@ -206,19 +206,19 @@ development:
   # Enable textmate links
   # textmate: true
 
-test:
-  <<: *default_settings
+#test:
+  #<<: *default_settings
   # It almost never makes sense to turn on the agent when running
   # unit, functional or integration tests or the like.
-  monitor_mode: false
+  #monitor_mode: false
 
 # Turn on the agent in production for 24x7 monitoring.  NewRelic
 # testing shows an average performance impact of < 5 ms per
 # transaction, you you can leave this on all the time without
 # incurring any user-visible performance degredation.
-production:
-  <<: *default_settings
-  monitor_mode: true
+#production:
+  #<<: *default_settings
+  #monitor_mode: true
 
 # Many applications have a staging environment which behaves
 # identically to production.  Support for that environment is provided
