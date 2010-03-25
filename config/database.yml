@@ -18,11 +18,11 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: consumidorweb3
+  database: nervie
   pool: 5
-  username: consumidorweb3
-  password: bleh123
-  host: mysql04.consumidorweb.com
+  username: root
+  password: ra12mo23el34
+  host: 208.88.125.196
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
