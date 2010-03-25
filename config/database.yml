@@ -21,7 +21,7 @@ development:
   database: nervie_development
   pool: 5
   username: root
-  password: ra12mo23el34
+  password: bleh123
   host: 208.88.125.196
 
 # Warning: The database defined as "test" will be erased and
