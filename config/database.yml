@@ -20,7 +20,7 @@ development:
   reconnect: false
   database: nervie_development
   pool: 5
-  username: root@localhost
+  username: root
   password: ra12mo23el34
   host: 208.88.125.196
 
