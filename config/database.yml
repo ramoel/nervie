@@ -32,7 +32,7 @@ test:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: nervie_development
+  database: nervie_test
   pool: 5
   username: root
   password: ra12mo23el34
@@ -42,7 +42,7 @@ production:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: nervie
+  database: nervie_production
   pool: 5
   username: root
   password: ra12mo23el34
