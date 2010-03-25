@@ -20,8 +20,8 @@ development:
   reconnect: false
   database: nervie_development
   pool: 5
-  username: root
-  password: bleh123
+  username: root@localhost
+  password: ra12mo23el34
   host: 208.88.125.196
 
 # Warning: The database defined as "test" will be erased and
@@ -34,7 +34,7 @@ test:
   reconnect: false
   database: nervie_test
   pool: 5
-  username: root
+  username: root@localhost
   password: ra12mo23el34
   host: 208.88.125.196
 
@@ -44,6 +44,6 @@ production:
   reconnect: false
   database: nervie_production
   pool: 5
-  username: root
+  username: root@localhost
   password: ra12mo23el34
   host: 208.88.125.196
