@@ -1,0 +1,21 @@
+# Logfile created on Thu Mar 25 18:18:17 -0300 2010 by logger.rb/22285
+[03/25/10 18:18:17 -0300 ramoel-laptop (21073)] INFO : Dispatcher: mongrel
+[03/25/10 18:18:17 -0300 ramoel-laptop (21073)] INFO : Application: Nervie
+[03/25/10 18:18:17 -0300 ramoel-laptop (21073)] INFO : Transaction tracing threshold is 2.0 seconds.
+[03/25/10 18:18:17 -0300 ramoel-laptop (21073)] INFO : New Relic RPM Agent 2.10.6 Initialized: pid = 21073
+[03/25/10 18:18:17 -0300 ramoel-laptop (21073)] INFO : Agent Log found in /home/ramoel/web/nervie/log/newrelic_agent.log
+[03/25/10 18:18:58 -0300 ramoel-laptop (21097)] INFO : Dispatcher: mongrel
+[03/25/10 18:18:58 -0300 ramoel-laptop (21097)] INFO : Application: Nervie
+[03/25/10 18:18:58 -0300 ramoel-laptop (21097)] INFO : Transaction tracing threshold is 2.0 seconds.
+[03/25/10 18:18:58 -0300 ramoel-laptop (21097)] INFO : New Relic RPM Agent 2.10.6 Initialized: pid = 21097
+[03/25/10 18:18:58 -0300 ramoel-laptop (21097)] INFO : Agent Log found in /home/ramoel/web/nervie/log/newrelic_agent.log
+[03/25/10 18:22:14 -0300 ramoel-laptop (21196)] INFO : Dispatcher: mongrel
+[03/25/10 18:22:14 -0300 ramoel-laptop (21196)] INFO : Application: Nervie
+[03/25/10 18:22:14 -0300 ramoel-laptop (21196)] INFO : Transaction tracing threshold is 2.0 seconds.
+[03/25/10 18:22:14 -0300 ramoel-laptop (21196)] INFO : New Relic RPM Agent 2.10.6 Initialized: pid = 21196
+[03/25/10 18:22:14 -0300 ramoel-laptop (21196)] INFO : Agent Log found in /home/ramoel/web/nervie/log/newrelic_agent.log
+[03/25/10 18:22:46 -0300 ramoel-laptop (21212)] INFO : Dispatcher: mongrel
+[03/25/10 18:22:46 -0300 ramoel-laptop (21212)] INFO : Application: Nervie
+[03/25/10 18:22:46 -0300 ramoel-laptop (21212)] INFO : Transaction tracing threshold is 2.0 seconds.
+[03/25/10 18:22:46 -0300 ramoel-laptop (21212)] INFO : New Relic RPM Agent 2.10.6 Initialized: pid = 21212
+[03/25/10 18:22:46 -0300 ramoel-laptop (21212)] INFO : Agent Log found in /home/ramoel/web/nervie/log/newrelic_agent.log
